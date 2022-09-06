@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "project-group-7",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://iankaFil.github.io/project-group-7",
+  "homepage": "https://iankaFil.github.io/project-group-7.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-group-7/"
+    "build": "parcel build src/*.html --public-url /project-group-7.git/"
   },
   "repository": {
     "type": "git",
