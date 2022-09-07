@@ -1,0 +1,21 @@
+@mixin btn {
+  box-shadow: $btnBoxShadow;
+  border-radius: 30.5px;
+  background-color: $btnBckgColor;
+  color: $accentTextColor;
+  padding: 16px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@mixin font($fw, $fs, $lh, $ls, $color) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: calc($lh/$fs);
+  letter-spacing: $ls;
+  color: $color;
+}
