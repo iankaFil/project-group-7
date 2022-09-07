@@ -4,3 +4,20 @@ body {
   font-family: 'Cera Pro', sans-serif;
   color: $mainTextColor;
 }
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
