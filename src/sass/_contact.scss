@@ -56,6 +56,7 @@
 
 .contacts__form-textarea {
   width: 100%;
+  max-width:280px;
   height: 199px;
     border: $inputBorder;
     border-radius: 50px 0px;
@@ -78,3 +79,34 @@
     line-height: 1.25em;
     color: #CDCDCD;
 }
+
+.contacts__box {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+.contacts__number, 
+.contacts__mail,
+.contacts__work-time {
+  width: 247px;
+    height: 20px;
+  
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+    text-transform: capitalize;
+    color: $mainTextColor;
+}
+
+.contacts__work-time {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+  
