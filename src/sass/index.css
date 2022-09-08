@@ -96,11 +96,11 @@ img {
   display: flex;
 }
 
-.header-nav_list {
+.header-nav__list {
   display: flex;
   flex-direction: row;
 }
 
-.header-contact_list {
+.header-contact__list {
   margin-left: auto;
 }/*# sourceMappingURL=index.css.map */

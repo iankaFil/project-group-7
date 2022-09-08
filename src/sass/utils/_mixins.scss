@@ -12,10 +12,9 @@
   text-transform: uppercase;
 }
 
-@mixin font($fw, $fs, $lh, $ls, $color) {
+@mixin font($fw, $fs, $lh, $color) {
   font-weight: $fw;
   font-size: $fs;
-  line-height: calc($lh/$fs);
-  letter-spacing: $ls;
+  line-height: $lh;
   color: $color;
 }
