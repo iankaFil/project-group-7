@@ -60,5 +60,8 @@
 <symbol id="icon-services-arrow" viewBox="0 0 107 32">
 <path fill="#008cef" style="fill: var(--color1, #008cef)" d="M53.333 0l46.187 32h-92.373l46.187-32z"></path>
 </symbol>
+<symbol id="icon-polygon" viewBox="0 0 107 32">
+<path fill="#008cef" style="fill: var(--color1, #008cef)" d="M53.333 0l46.188 32h-92.376l46.188-32z"></path>
+</symbol>
 </defs>
 </svg>

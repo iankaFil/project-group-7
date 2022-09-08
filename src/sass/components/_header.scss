@@ -1,11 +1,12 @@
 .header-wrap {
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  margin-top: 40px;
 }
+
 .header-nav__list {
   display: flex;
-  padding-top: 14px;
+  margin-top: 14px;
 }
 .header-nav__item:not(:last-child) {
   margin-right: 56px;
@@ -13,7 +14,64 @@
 .header-contact__list {
   margin-left: auto;
 }
+.dropmenu {
+  position: relative;
+  display: inline-block;
+}
+.dropmenu__content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+.dropmenu__content .header-dropmenu__link {
+  color: $mainTextColor;
+  width: 131px;
+  text-decoration: none;
+  display: block;
+}
+.dropmenu:hover .dropmenu__content {
+  display: block;
+}
+.dropbtn {
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
 .dropbtn::after {
   content: '';
-  color: #000;
+  background-image: url(../images/favicon/Polygon.png);
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  margin-left: 4px;
+  margin-bottom: 1px;
+}
+.dropbtn:hover::after {
+  transform: rotate(180deg);
+}
+.dropmenu-lang {
+  margin-top: 14px;
+  position: relative;
+  display: inline-block;
+}
+.dropbtn-lang {
+  @include font(400, 14px, 1.3, #bdbdbd);
+}
+.dropmenu-lang__content {
+  @include font(400, 14px, 1.3, #bdbdbd);
+
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+.dropmenu-lang__content .dropmenu-lang__link {
+  width: 131px;
+  text-decoration: none;
+  display: block;
+}
+.dropmenu-lang:hover .dropmenu-lang__content {
+  display: block;
 }
