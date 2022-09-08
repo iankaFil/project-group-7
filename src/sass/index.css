@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 @media screen and (max-width: 480px) {
@@ -89,6 +89,18 @@ a {
 
 img {
   display: block;
-  width: 100%;
   height: auto;
+}
+
+.header-wrap {
+  display: flex;
+}
+
+.header-nav_list {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-contact_list {
+  margin-left: auto;
 }/*# sourceMappingURL=index.css.map */
