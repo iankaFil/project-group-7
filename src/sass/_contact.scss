@@ -1,0 +1,80 @@
+.contacts__title {
+  color: $accentTextColor;
+  width: 280px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25em;
+}
+
+.contacts__list {
+  padding-bottom: 40px;
+}
+
+.contacts__item {
+  margin-top: 16px;
+}
+
+.contacts__text {
+  width: 280px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25em;
+  color: $mainTextColor;
+}
+
+.contacts__form-title {
+    width: 280px;
+    height: 23px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.28em;
+    
+    color: $accentTextColor;
+}
+
+.contacts__form-lable {
+  width: 280px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+    
+    color: $mainTextColor;
+}
+
+.contacts__form-input{
+  border: none;
+  border-bottom: $inputBorder;
+  width: 280px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+  
+    color: $mainTextColor;
+}
+
+.contacts__form-textarea {
+  width: 100%;
+  height: 199px;
+    border: $inputBorder;
+    border-radius: 50px 0px;
+    padding: 22px;
+
+    font-family: 'Cera Pro';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25em;
+      color: #CDCDCD;
+}
+
+
+.contacts__form-text {
+  width: 280px;
+    height: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25em;
+    color: #CDCDCD;
+}
