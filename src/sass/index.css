@@ -94,13 +94,23 @@ img {
 
 .header-wrap {
   display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
 }
 
 .header-nav__list {
   display: flex;
-  flex-direction: row;
+  padding-top: 14px;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 56px;
 }
 
 .header-contact__list {
   margin-left: auto;
+}
+
+.dropbtn::after {
+  content: "";
 }/*# sourceMappingURL=index.css.map */
