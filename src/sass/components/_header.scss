@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   display: flex;
+  justify-content: space-between;
   padding-top: 20px;
   width: 100%;
   @media screen and (min-width: 1440px) {
@@ -17,7 +18,7 @@
   }
 }
 .logo {
-  width: 101px;
+  max-width: 101px;
   height: 25px;
 
   @media screen and (min-width: 768px) {
@@ -107,6 +108,9 @@
   transition-duration: 500ms;
   transition-timing-function: linear;
   transition-delay: 0;
+  @media screen and (max-width: 1439px) {
+    margin-bottom: 24px;
+  }
 }
 .dropbtn::after {
   @media screen and (min-width: 1439px) {
@@ -194,8 +198,10 @@
   background-color: transparent;
   border: none;
   fill: currentColor;
-  // transition: color $animation;
   padding: 0;
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .menu-button__close {
