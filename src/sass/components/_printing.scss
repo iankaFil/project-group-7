@@ -5,24 +5,38 @@
         margin-right: 204px;
     }
 }
-
+.our-processes
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    @include tablet{gap:60px};
+    @include desktop{gap: 100px}
+}
 .process-item{
-    border:1 solid red;
+border:1 solid red;
 width: 100%;
 
 @include tablet{
     display: flex; 
     gap: 32px;
     align-items: flex-start;
-    margin-bottom: 60px;
+
 } 
 }
-
-.process-description:not(:last-child){
+.process-item:not(:last-chaild){margin-bottom: 50px;}
+.process-description:not(:last-child)
+{
     margin-bottom: 16px;
     @include tablet {margin-bottom: 24px;};
 }
-.process-description:last-child{margin-bottom: 56px;}
 
 
 
+
+.order-link{
+display:inline-block;
+align-content: flex-start;
+width:277px;
+max-height: 56px;
+@include btn}
