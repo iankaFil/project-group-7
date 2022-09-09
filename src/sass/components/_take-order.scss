@@ -87,6 +87,9 @@
   gap: 18px;
   @include font(400, 18px, 1.1, $color);
 }
+.take-order-contacts__link {
+  @include font(400, 18px, 1.1, $color);
+}
 .mosaics {
   display: flex;
   justify-content: end;
