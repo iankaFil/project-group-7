@@ -43,7 +43,10 @@
 .hero__list {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
+  @media screen and (min-width: 350px) {
+    gap: 15px;
+  }
   @media screen and (min-width: 768px) {
     gap: 29px;
   }

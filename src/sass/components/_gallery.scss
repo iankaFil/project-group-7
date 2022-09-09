@@ -4,6 +4,17 @@
 // }
 // перевірити маржіни контейнера героя, моб 40рх, таблет 60рх, деск 120рх
 
+.gallery__container {
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
+}
+
 .gallery__title {
     margin-bottom: 16px;
     font-weight: 700;
