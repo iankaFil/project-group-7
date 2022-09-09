@@ -1,19 +1,38 @@
 <header>
   <div class="header-wrap container">
     <a class="logo-link" href="./index.html">
-      <picture class="logo">
+      <picture>
         <source
           srcset="
-            ./images/bitmap/logo/oxi-png/logo_192x48.png     1x,
-            ./images/bitmap/logo/oxi-png/logo_192x48.@2x.png 2x
+            ./images/bitmap/logo/browser-png/logo_192x48.png     1x,
+            ./images/bitmap/logo/browser-png/logo_192x48.@2x.png 2x
           "
+          media="(min-width: 1440px)"
         />
-        <img src="./images/bitmap/logo/oxi-png/logo_192x48.png" width="195px" />
+        <source
+          srcset="
+            ./images/bitmap/logo/browser-png/logo_125x31.png    1x,
+            ./images/bitmap/logo/browser-png/logo_125x31@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/bitmap/logo/browser-png/logo_101x25.png    1x,
+            ./images/bitmap/logo/browser-png/logo_101x25@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/bitmap/logo/browser-png/logo_101x25.png"
+          alt="Логотип"
+        />
       </picture>
     </a>
+
     <button
       type="button"
-      class="menu-button header-menu__button"
+      class="menu-button"
       data-menu-button
       aria-expanded="false"
     >
@@ -28,12 +47,7 @@
         ></use>
       </svg>
     </button>
-    <button
-      type="button"
-      class="menu-button header-menu__button"
-      contact-menu-button
-      aria-expanded="false"
-    >
+    <button type="button" class="contact-button" aria-expanded="false">
       <svg class="" width="24" height="24">
         <use
           class="menu-button__telephone"
@@ -41,6 +55,7 @@
         ></use>
       </svg>
     </button>
+
     <div class="dropmenu-lang">
       <p class="dropbtn-lang">Укр</p>
       <div class="dropmenu-lang__content">
@@ -83,7 +98,7 @@
           </li>
         </ul>
       </nav>
-      <div class="modal-contact__menu" contact-menu>
+      <div class="modal-contact__menu">
         <ul class="header-contact__list">
           <li class="header-contact__item">
             <a class="header-contact__link" href="tel:+380936432288">

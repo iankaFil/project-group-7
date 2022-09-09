@@ -1,16 +1,12 @@
 (() => {
-  const menuBtnRef = document.querySelector('[contact-menu-button]');
-  const mobileMenuRef = document.querySelector('[contact-menu]');
+  const refs = {
+    phoneBtn: document.querySelector('.contact-button'),
+    phoneThumb: document.querySelector('.modal-contact__menu'),
+  };
 
-  menuBtnRef.addEventListener('click', () => {
-    const expanded =
-      menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
+  refs.phoneBtn.addEventListener('click', togglePhoneThumb);
 
-    menuBtnRef.classList.toggle('is-open');
-    menuBtnRef.setAttribute('aria-expanded', !expanded);
-
-    mobileMenuRef.classList.toggle('is-open');
-
-    document.body.classList.toggle('contact-open');
-  });
+  function togglePhoneThumb() {
+    refs.phoneThumb.classList.toggle('is-open');
+  }
 })();
