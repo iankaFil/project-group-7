@@ -1,36 +1,52 @@
 <section class="photos" id="photos">
     <div class="photos__container">
         <h2 class="photos__title">БІЛЬШЕ ФОТО</h2>
-         <ul class="photos__list">
-            <li class="photos__item" >
-                <a href="#img1" class="photos__link">
-                    <picture class="photo">
-                        <source srcset="
-                            ./images/bitmap/main/desktop/gallery/more-photos-webp/more-photos-1.webp 1x,
-                            ./images/bitmap/main/desktop/gallery/more-photos-webp/more-photos-1@2x.webp 2x,
-                            ./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1.jpg 1x,
-                            ./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg 2x"
-                            media="(min-width: 1440px)">
-                        <source srcset="
-                            ./images/bitmap/main/tablet/gallery/more-photos-webp/more-photos-1.webp 1x,
-                            ./images/bitmap/main/tablet/gallery/more-photos-webp/more-photos-1@2x.webp 2x,
-                            ./images/bitmap/main/tablet/gallery/more-photos-mozjpeg/more-photos-1.jpg 1x,
-                            ./images/bitmap/main/tablet/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg 2x"
-                            media="(min-width: 768px)">
-                        <source srcset="
-                            ./images/bitmap/main/mobile/gallery/more-photos-webp/more-photos-1.webp 1x,
-                            ./images/bitmap/main/mobile/gallery/more-photos-webp/more-photos-1@2x.webp 2x,
-                            ./images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-1.jpg 1x,
-                            ./images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg 2x"
-                            media="(max-width: 767px)">
-                        <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1.jpg" alt="Приклад робіт">
-                    </picture>
-                </a>
-                <div id="img1" class="popup">
-                    <a href="#photos" class="close">X</a>
-                    <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg" alt="">
-                </div>
-            </li>
+            <ul class="photos__list">
+                <li class="photos__item" >
+                    <a href="#img1" class="photos__link">
+                        <picture class="photo">
+                            <source srcset="
+                                ./images/bitmap/main/desktop/gallery/more-photos-webp/more-photos-1.webp 1x,
+                                ./images/bitmap/main/desktop/gallery/more-photos-webp/more-photos-1@2x.webp 2x,
+                                ./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1.jpg 1x,
+                                ./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg 2x"
+                                media="(min-width: 1440px)">
+                            <source srcset="
+                                ./images/bitmap/main/tablet/gallery/more-photos-webp/more-photos-1.webp 1x,
+                                ./images/bitmap/main/tablet/gallery/more-photos-webp/more-photos-1@2x.webp 2x,
+                                ./images/bitmap/main/tablet/gallery/more-photos-mozjpeg/more-photos-1.jpg 1x,
+                                ./images/bitmap/main/tablet/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/bitmap/main/mobile/gallery/more-photos-webp/more-photos-1.webp 1x,
+                                ./images/bitmap/main/mobile/gallery/more-photos-webp/more-photos-1@2x.webp 2x,
+                                ./images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-1.jpg 1x,
+                                ./images/bitmap/main/mobile/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg 2x"
+                                media="(max-width: 767px)">
+                            <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1.jpg" alt="Приклад робіт">
+                        </picture>
+                    </a>
+                    <div id="img1" class="overlay">
+                        <a href="#photos" class="close"></a>
+                        <div class="overlay__img-wrap">
+                            <span class="arrow-wrap arrow-left"> 
+                                <a href="#img12" class="arrow-scroll">
+                                    <svg class="overlay__icon " width="42" height="42">
+                                        <use href="./images/sprite.svg#icon-gallery-arrow-left"></use>
+                                    </svg>
+                                </a>
+                            </span>
+                            <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-1@2x.jpg" alt="">
+                            <span class="arrow-wrap arrow-right">
+                                <a href="#img2" class="arrow-scroll">
+                                    <svg class="overlay__icon " width="42" height="42">
+                                        <use href="./images/sprite.svg#icon-gallery-arrow-right"></use>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </li>
             <li class="photos__item">
                 <a href="#img2" class="photos__link">
                     <picture class="photo">
@@ -55,8 +71,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-2.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img2" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img2" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-2@2x.jpg" alt="">
                 </div>
             </li>
@@ -84,9 +100,12 @@
                     <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-3.jpg" alt="Приклад робіт">
                 </picture>
                 </a>
-                <div id="img3" class="popup">
-                    <a href="#photos" class="close">X</a>
-                    <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-3@2x.jpg" alt="">
+                <div id="img3" class="overlay">
+                    <a href="#photos" class="close"></a>
+
+                    <div class="overlay__img-wrap">
+                        <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-3@2x.jpg" alt="">
+                    </div>
                 </div>
             </li>
             <li class="photos__item">
@@ -113,8 +132,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-4.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img4" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img4" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-4@2x.jpg" alt="">
                 </div>
             </li>
@@ -142,8 +161,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-5.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img5" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img5" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-5@2x.jpg" alt="">
                 </div>
             </li>
@@ -171,8 +190,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-6.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img6" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img6" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-6@2x.jpg" alt="">
                 </div>
             </li>
@@ -200,8 +219,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-7.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img7" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img7" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-7@2x.jpg" alt="">
                 </div>
             </li>
@@ -229,8 +248,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-8.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img8" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img8" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-8@2x.jpg" alt="">
                 </div>
             </li>
@@ -258,8 +277,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-9.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img9" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img9" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-9@2x.jpg" alt="">
                 </div>
             </li>
@@ -287,8 +306,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-10.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img10" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img10" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-10@2x.jpg" alt="">
                 </div>
             </li>
@@ -316,8 +335,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-11.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img11" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img11" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-11@2x.jpg" alt="">
                 </div>
             </li>
@@ -345,8 +364,8 @@
                         <img src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-12.jpg" alt="Приклад робіт">
                     </picture>
                 </a>
-                <div id="img12" class="popup">
-                    <a href="#photos" class="close">X</a>
+                <div id="img12" class="overlay">
+                    <a href="#photos" class="close"></a>
                     <img class="full-img" src="./images/bitmap/main/desktop/gallery/more-photos-mozjpeg/more-photos-12@2x.jpg" alt="">
                 </div>
             </li>
@@ -365,4 +384,3 @@
         </div>
     </div>
 </section>
-<!-- OVERLAY + IMAGE CAROUSEL -->
