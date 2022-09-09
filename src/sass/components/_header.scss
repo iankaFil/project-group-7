@@ -3,16 +3,26 @@
   justify-content: space-between;
   margin-top: 40px;
 }
-
+.logo-link {
+  margin-right: 253px;
+}
+.logo {
+  width: 192px;
+  height: 48px;
+}
 .header-nav__list {
   display: flex;
   margin-top: 14px;
+  gap: 56px;
 }
-.header-nav__item:not(:last-child) {
-  margin-right: 56px;
-}
+// .header-nav__item {
+//   gap: 56px;
+// }
 .header-contact__list {
   margin-left: auto;
+}
+.header-contact__icon {
+  margin-right: 8px;
 }
 .dropmenu {
   position: relative;
@@ -41,7 +51,8 @@
 }
 .dropbtn::after {
   content: '';
-  background-image: url(../images/favicon/Polygon.png);
+  background-image: url(../images/favicon/Polygon.svg);
+  background-repeat: no-repeat;
   display: inline-block;
   width: 10px;
   height: 4px;
@@ -58,6 +69,7 @@
 }
 .dropbtn-lang {
   @include font(400, 14px, 1.3, #bdbdbd);
+  margin-left: 130px;
 }
 .dropmenu-lang__content {
   @include font(400, 14px, 1.3, #bdbdbd);
