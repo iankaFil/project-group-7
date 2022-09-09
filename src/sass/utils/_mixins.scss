@@ -18,3 +18,30 @@
   line-height: $lh;
   color: $color;
 }
+
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: 1440) {
+    @content;
+  }
+}
+
+@mixin retina {
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    @content;
+  }
+}
