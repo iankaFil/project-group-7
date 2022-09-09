@@ -1,9 +1,11 @@
 .header-wrap {
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
-  padding: 20px;
+  padding-top: 20px;
+  width: 100%;
   @media screen and (min-width: 1440px) {
     margin-top: 40px;
     margin-bottom: 100px;
@@ -70,13 +72,13 @@
 }
 
 .dropmenu {
-  display: inline-block;
-  flex-direction: column;
   @media screen and (min-width: 1440px) {
     position: relative;
   }
 }
 .dropmenu__content {
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 1440px) {
     display: none;
     position: absolute;
@@ -87,11 +89,15 @@
 }
 .dropmenu__content .header-dropmenu__link {
   @include font(500, 24px, 1.25, $accentTextColor);
+  text-transform: none;
   @media screen and (min-width: 1440px) {
     color: $mainTextColor;
     text-decoration: none;
     display: block;
   }
+}
+.header-dropmenu__link:not(:last-child) {
+  margin-bottom: 24px;
 }
 .dropmenu:hover .dropmenu__content {
   display: block;
