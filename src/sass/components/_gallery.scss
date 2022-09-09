@@ -1,0 +1,67 @@
+// .gallery {
+//   padding-top: 40px;
+//   padding-bottom: 40px;
+// }
+// перевірити маржіни контейнера героя, моб 40рх, таблет 60рх, деск 120рх
+
+.gallery__title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25;
+    color: $accentTextColor;
+    text-transform: uppercase;
+  
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+      font-size: 36px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 62px;
+      font-size: 48px;
+    }
+  }
+  
+  .gallery__list {
+    column-gap: 24px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    @media screen and (min-width: 1440px) {
+      gap: 40px 32px;
+    }
+  }
+  
+  .gallery__item {
+    width: 280px;
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+    @media screen and (min-width: 1440px) {
+      width: 555px;
+    }
+  }
+  .gallery__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 24px;
+  }
+  }
+  
+  .gallery__description {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $accentTextColor;
+    @media screen and (min-width: 768px) {
+      margin-top: 16px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-top: 16px;
+      font-size: 18px;
+      line-height: 1.28;
+    }
+  }
+  
