@@ -72,3 +72,110 @@
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3@2x.jpg);
   }
 }
+
+// take-order-contacts
+.take-order-contacts {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.take-order-contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  @include font(400, 18px, 1.1, $color);
+}
+.mosaics {
+  display: flex;
+  justify-content: end;
+  margin-top: 60px;
+}
+.mosaics__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 529px;
+  height: 293px;
+  gap: 10px;
+}
+.mosaics__figure1 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  border-top-right-radius: 72px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.mosaics__figure2 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: top;
+  border-bottom-left-radius: 72px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.mosaics__figure3 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: top right;
+  border-top-left-radius: 72px;
+  border-bottom-right-radius: 72px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.mosaics__figure4 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: bottom left;
+  border-bottom-left-radius: 72px;
+  border-top-right-radius: 72px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.mosaics__figure5 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: bottom;
+  border-radius: 72px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+.mosaics__figure6 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: bottom right;
+  border-bottom-right-radius: 72px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
