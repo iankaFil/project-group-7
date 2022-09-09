@@ -37,3 +37,7 @@
 .scann__text {
   text-align: center;
 }
+
+.button {
+  @include btn;
+}
