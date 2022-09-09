@@ -1,3 +1,39 @@
 .scann {
-    
+  padding: 40px 0;
+}
+
+.scann__title {
+  margin-bottom: 16px;
+}
+
+.scann__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 20px;
+}
+
+.scann__item {
+  width: calc(100% / 2 - 20px);
+  height: 182px;
+  padding: 18px 20px;
+  text-align: center;
+
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
+    inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+}
+
+.scann__item::before {
+  content: '';
+
+  background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.scann__text {
+  text-align: center;
 }
