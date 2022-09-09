@@ -21,3 +21,9 @@ body {
     width: 1440px;
   }
 }
+.title {
+  @include font($fw, $fs, $lh, $accentTextColor);
+}
+.subtitle {
+  @include font($fw, 36px, $lh, $accentTextColor);
+}
