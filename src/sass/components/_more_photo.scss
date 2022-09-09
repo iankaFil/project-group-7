@@ -1,6 +1,6 @@
 // MORE PHOTOS
 
-.container {
+.photos__container {
     margin: 0 auto;
     margin-bottom: 60px;
     padding: 0 20px;
@@ -305,5 +305,40 @@ ul {
     100% {
         background-color: rgb(255, 255, 255);
     }
+<<<<<<< HEAD
 }
 
+=======
+
+// OVERLAY + IMAGE CAROUSEL
+
+.popup:not(:target) {
+    display: none;
+}
+
+.popup:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    background: rgba(179, 117, 117, 0.9);
+}
+
+.full-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: red;
+}
+>>>>>>> origin/main-morephotos-overlay
