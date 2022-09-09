@@ -1,4 +1,5 @@
 @charset "UTF-8";
+<<<<<<< Updated upstream
 @import '~node_modules/modern-normalize/modern-normalize.css';
 body {
   font-family: "Cera Pro", sans-serif;
@@ -25,6 +26,8 @@ body {
   }
 }
 
+=======
+>>>>>>> Stashed changes
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Bold.eot");
@@ -90,6 +93,7 @@ a {
 img {
   display: block;
   height: auto;
+<<<<<<< Updated upstream
 }
 
 .header-wrap {
@@ -117,25 +121,158 @@ img {
 }
 
 .container {
+=======
+  max-width: 100%;
+}
+
+.hero__title {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  font-family: "Caviar Dreams";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  color: #2b2b2b;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 336px;
+    margin-bottom: 60px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__title {
+    width: 630px;
+    font-size: 48px;
+  }
+}
+
+.hero__text {
+  margin-top: 32px;
+  font-family: "Caviar Dreams";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: #2b2b2b;
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__text {
+    font-size: 36px;
+  }
+}
+
+.hero__list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .hero__list {
+    gap: 29px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__list {
+    gap: 32px;
+  }
+}
+
+.hero__img1 {
+  border-radius: 0px 35px 0px 0px;
+}
+@media screen and (min-width: 1440px) {
+  .hero__img1 {
+    border-radius: 0px 72px 0px 0px;
+  }
+}
+
+.hero__img2 {
+  border-radius: 100px;
+}
+
+.hero__img3 {
+  border-radius: 0px 25px;
+}
+@media screen and (min-width: 1440px) {
+  .hero__img3 {
+    border-radius: 0px 72px;
+  }
+}
+
+.hero__link {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  bottom: 8px;
+  left: 102px;
+}
+@media screen and (max-width: 767px) {
+  .hero__link {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero__link {
+    width: 32px;
+    height: 32px;
+    top: 15px;
+    left: 81px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.photos__container {
+>>>>>>> Stashed changes
   margin: 0 auto;
   margin-bottom: 60px;
   padding: 0 20px;
   width: 100%;
 }
 @media screen and (min-width: 480px) {
+<<<<<<< Updated upstream
   .container {
+=======
+  .photos__container {
+>>>>>>> Stashed changes
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
+<<<<<<< Updated upstream
   .container {
+=======
+  .photos__container {
+>>>>>>> Stashed changes
     max-width: 768px;
     padding: 0 32px;
     margin-bottom: 80px;
   }
 }
 @media screen and (min-width: 1440px) {
+<<<<<<< Updated upstream
   .container {
+=======
+  .photos__container {
+>>>>>>> Stashed changes
     max-width: 1440px;
     padding: 0 149px;
     margin-bottom: 100px;
@@ -163,6 +300,14 @@ img {
   }
 }
 
+<<<<<<< Updated upstream
+=======
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+>>>>>>> Stashed changes
 @media screen and (min-width: 768px) {
   .photos__list {
     display: flex;
@@ -375,6 +520,7 @@ img {
     background-color: rgb(255, 255, 255);
   }
 }
+<<<<<<< Updated upstream
 .printing__title {
   font-family: "Cera Pro";
   font-style: normal;
@@ -456,6 +602,413 @@ img {
   .printing-hero__title {
     font-size: 18px;
     margin-top: 21px;
+=======
+.popup:not(:target) {
+  display: none;
+}
+
+.popup:target {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  background: rgba(179, 117, 117, 0.9);
+}
+
+.full-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: red;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.logo-link {
+  margin-right: 253px;
+}
+
+.logo {
+  width: 192px;
+  height: 48px;
+}
+
+.header-nav__list {
+  display: flex;
+  margin-top: 14px;
+  gap: 56px;
+}
+
+.header-contact__list {
+  margin-left: auto;
+}
+
+.header-contact__icon {
+  margin-right: 8px;
+}
+
+.dropmenu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropmenu__content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.dropmenu__content .header-dropmenu__link {
+  color: #2b2b2b;
+  width: 131px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropmenu:hover .dropmenu__content {
+  display: block;
+}
+
+.dropbtn {
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+
+.dropbtn::after {
+  content: "";
+  background-image: url(../images/favicon/Polygon.svg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  margin-left: 4px;
+  margin-bottom: 1px;
+}
+
+.dropbtn:hover::after {
+  transform: rotate(180deg);
+}
+
+.dropmenu-lang {
+  margin-top: 14px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn-lang {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #bdbdbd;
+  margin-left: 130px;
+}
+
+.dropmenu-lang__content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #bdbdbd;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+.dropmenu-lang__content .dropmenu-lang__link {
+  width: 131px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropmenu-lang:hover .dropmenu-lang__content {
+  display: block;
+}
+
+.gallery__title {
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .gallery__title {
+    margin-bottom: 32px;
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery__title {
+    margin-bottom: 62px;
+    font-size: 48px;
+  }
+}
+
+.gallery__list {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery__list {
+    gap: 40px 32px;
+  }
+}
+
+.gallery__item {
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery__item {
+    width: 555px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gallery__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.gallery__description {
+  margin-top: 8px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #487996;
+}
+@media screen and (min-width: 768px) {
+  .gallery__description {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery__description {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 1.28;
+  }
+}
+
+.hero-take-order-inner {
+  display: flex;
+  gap: 30px;
+}
+
+.hero-take-order-title {
+  margin-bottom: 24px;
+}
+
+.hero-take-order__picture {
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img.jpg);
+  min-width: 555px;
+  height: 400px;
+  background-position: center;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-take-order__picture {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img@2x.jpg);
+  }
+}
+
+.hero-take-order__text-item {
+  margin-bottom: 24px;
+}
+.hero-take-order__text-item:last-child {
+  margin-bottom: 60px;
+}
+
+.hero-take-order__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.27;
+  color: #2b2b2b;
+}
+
+.hero-take-order__list {
+  display: flex;
+  gap: 32px;
+}
+
+.hero-take-order__item-one {
+  width: 203px;
+  height: 203px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-1.jpg);
+  border-top-right-radius: 72px;
+  border-bottom-left-radius: 72px;
+  border-top-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-take-order__item-one {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-1@2x.jpg);
+  }
+}
+
+.hero-take-order__item-two {
+  width: 203px;
+  height: 203px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-2.jpg);
+  border-bottom-right-radius: 72px;
+  border-top-left-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-take-order__item-two {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-2@2x.jpg);
+  }
+}
+
+.hero-take-order__item-three {
+  width: 203px;
+  height: 203px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3.jpg);
+  border-bottom-right-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-take-order__item-three {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3@2x.jpg);
+  }
+}
+
+.take-order-contacts {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.take-order-contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #2b2b2b;
+}
+
+.mosaics {
+  display: flex;
+  justify-content: end;
+  margin-top: 60px;
+}
+
+.mosaics__list {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 529px;
+  height: 293px;
+  gap: 10px;
+}
+
+.mosaics__figure1 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  border-top-right-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .mosaics__figure1 {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+
+.mosaics__figure2 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: top;
+  border-bottom-left-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .mosaics__figure2 {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+
+.mosaics__figure3 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: top right;
+  border-top-left-radius: 72px;
+  border-bottom-right-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .mosaics__figure3 {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+
+.mosaics__figure4 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: bottom left;
+  border-bottom-left-radius: 72px;
+  border-top-right-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .mosaics__figure4 {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+
+.mosaics__figure5 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: bottom;
+  border-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .mosaics__figure5 {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+  }
+}
+
+.mosaics__figure6 {
+  width: 150px;
+  height: 145px;
+  background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
+  background-position: bottom right;
+  border-bottom-right-radius: 72px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .mosaics__figure6 {
+    background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
+>>>>>>> Stashed changes
   }
 }
 
