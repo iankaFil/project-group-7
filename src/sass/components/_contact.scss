@@ -16,14 +16,35 @@
   }
 }
 
+@include tablet {
+  .contacts__flex-box {
+    display: flex;
+
+  }
+}
+
+.iframe {
+  width: 280px;
+  height: 171px;
+  border-radius: 15px;
+
+  @include tablet {
+    width: 336px;
+    height: 261px;
+    margin-right: 24px;
+  }
+}
+
 .contacts__title {
   margin-top: 40px;
+  margin-right: 0;
   margin-bottom: 16px;
   color: $accentTextColor;
   width: 280px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25em;
+  text-align: left;
 }
 
 .contact__list {
@@ -40,16 +61,35 @@
   font-size: 16px;
   line-height: 1.25em;
   color: $mainTextColor;
+
+  @include tablet {
+    width: 335px;
+  }
 }
 
 .contacts__form-title {
-  width: 280px;
+  // width: 280px;
   height: 23px;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.28em;
-
+  text-align: start;
+  text-transform: uppercase;
   color: $accentTextColor;
+
+  @include tablet {
+    // width: 184px;
+    margin-bottom: 8px;
+    
+  }
+}
+
+.contacts__form-title--text{
+  text-transform: none;
+}
+
+.contacts__form-title--position {
+  text-align: end;
 }
 
 .contacts__form-lable {
@@ -58,8 +98,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25em;
-
+  text-align: justify;
   color: $mainTextColor;
+  margin-bottom: 8px;
+
+    @include tablet {
+        width: 400px;
+      }
 }
 
 .contacts__form-input {
@@ -73,6 +118,10 @@
   line-height: 1.25em;
 
   color: $mainTextColor;
+
+  @include tablet {
+    width: 400px;
+  }
 }
 
 .contacts__form-textarea {
@@ -89,6 +138,11 @@
   font-size: 16px;
   line-height: 1.25em;
   color: #cdcdcd;
+
+  @include tablet {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 
 .contacts__form-text {
@@ -98,6 +152,19 @@
   font-size: 16px;
   line-height: 1.25em;
   color: #cdcdcd;
+
+  @include tablet {
+      width: 400px;
+      text-align: initial;
+    }
+}
+
+.contacts__form-flex {
+  @include tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 }
 
 .contacts__box {
@@ -106,7 +173,35 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @include tablet {
+    flex-direction: row;
+  }
 }
+
+  @include tablet {
+    .number__tablet{
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      width: 184px;
+    }
+
+    .mail__tablet {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      margin-right: 82px;
+    }
+
+    .time__tablet {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      margin-left: auto;
+    }
+  }
+
 
 .contacts__work-time {
   margin-top: 8px;
@@ -127,10 +222,25 @@
   line-height: 1.25em;
   text-transform: capitalize;
   color: $mainTextColor;
+
+  @include tablet {
+    width: 184px;
+  }
+}
+
+.contacts__work-time {
+  @include tablet {
+    text-align: end;
+  }
 }
 
 .button {
   @include btn ;
   margin-top: 40px;
   width: 280px;
+  @include tablet {
+  width: 177px;
+  margin-right: 174px;
+  }
+  
 }
