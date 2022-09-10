@@ -1,4 +1,4 @@
-<header>
+<header class="header">
   <div class="header-wrap container">
     <a class="logo-link" href="./index.html">
       <picture>
@@ -36,11 +36,13 @@
       data-menu-button
       aria-expanded="false"
     >
-      <svg class="" width="32" height="32">
+      <svg class="menu-button" width="24" height="24">
         <use
           class="menu-button__close"
           href="./images/sprite.svg#icon-cross"
         ></use>
+      </svg>
+      <svg class="menu-button menu-button__menu" width="32" height="32">
         <use
           class="menu-button__menu"
           href="./images/sprite.svg#icon-mobile-burger"
@@ -98,7 +100,9 @@
           </li>
         </ul>
       </nav>
-      <div class="modal-contact__menu">
+    </div>
+    <div class="modal-contact__menu">
+      <div class="triangle-wrap">
         <ul class="header-contact__list">
           <li class="header-contact__item">
             <a class="header-contact__link" href="tel:+380936432288">

@@ -13,26 +13,46 @@ body.menu-open {
     overflow: hidden;
   }
 }
-
+section {
+  @media screen and (min-width: 1440px) {
+    padding-top: 120px;
+  }
+}
 .container {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }
-
   @media screen and (min-width: 768px) {
+    padding-left: 32px;
+    padding-right: 32px;
     width: 768px;
   }
-
   @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+    padding-right: 149px;
     width: 1440px;
   }
 }
 .title {
-  @include font($fw, $fs, $lh, $accentTextColor);
+  @include font($fw, 24px, $lh, $accentTextColor);
+
+  @include tablet {
+    @include font($fw, 36px, $lh, $accentTextColor);
+  }
+  @include desktop {
+    @include font($fw, $fs, $lh, $accentTextColor);
+  }
 }
 .subtitle {
-  @include font($fw, 36px, $lh, $accentTextColor);
+  @include font($fw, 18px, 1.27, $accentTextColor);
+
+  @include tablet {
+    @include font($fw, 24px, $lh, $accentTextColor);
+  }
+  @include desktop {
+    @include font($fw, 36px, $lh, $accentTextColor);
+  }
 }
