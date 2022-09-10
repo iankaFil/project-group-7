@@ -1,59 +1,348 @@
-.our-service{ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.our-service {
     padding-top: 100px;
     padding-bottom: 80px;
 }
-.our-processes{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 55px;
-@include tablet{gap:60px;};
-@include desktop{gap:100px;width: 1054px;};}
+
+.our-processes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+
+    @include tablet {
+        gap: 60px;
+    }
+
+    ;
+
+    @include desktop {
+        gap: 100px;
+        width: 1054px;
+    }
+
+    ;
+}
 
 .process-item {
 
     display: flex;
-    flex-direction: column;gap: 20px;
-    @include tablet {flex-direction: row;gap:32px};
-    @include desktop{gap:86px}
+    flex-direction: column;
+    gap: 20px;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 32px
+    }
+
+    ;
+
+    @include desktop {
+        gap: 86px
+    }
 }
 
-.process-description{
+.process-description {
     color: $mainTextColor;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.25;
-    @include tablet{font-weight: 400;};
-    @include desktop{
+
+    @include tablet {
+        font-weight: 400;
+    }
+
+    ;
+
+    @include desktop {
         font-weight: 300;
         font-size: 18px;
-        line-height:1.43;
-    };
+        line-height: 1.43;
+    }
+
+    ;
 }
-.process-description span{
+
+.process-description span {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
     color: $accentTextColor;
 }
-.process-description:not(:last-child){margin-bottom: 16px;@include desktop{margin-bottom: 24px;}}
 
-.order-link
-{   
+.process-description:not(:last-child) {
+    margin-bottom: 16px;
+
+    @include desktop {
+        margin-bottom: 24px;
+    }
+}
+
+.order-link {
     padding: 16px 32px;
-        box-shadow: $btnBoxShadow;
-        border-radius: 30.5px;
-        background-color: $btnBckgColor;
-        color: $accentTextColor;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.5;
+    box-shadow: $btnBoxShadow;
+    border-radius: 30.5px;
+    background-color: $btnBckgColor;
+    color: $accentTextColor;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    @include tablet{
+
+    @include tablet {
         width: 280px;
-        height: 50px;}
+        height: 50px;
+    }
 }
