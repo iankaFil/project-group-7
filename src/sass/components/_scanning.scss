@@ -1,87 +1,83 @@
 .scanhero_box {
   @media screen and (min-width: 1200px) {
-      display: flex;
-   }
+    display: flex;
+  }
 }
 .scanhero_info {
   @media screen and (min-width: 1200px) {
-     padding-left: 100px;
-  } 
+    padding-left: 100px;
+  }
 }
 .scanhero_list {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-     padding-right: 222px;
-   }
+    padding-right: 222px;
+  }
 }
 .scanhero_title {
-  @include font (700, 24px, 1.25, #487996);
+  @include font(700, 24px, 1.25, #487996);
   @media screen and (min-width: 320px) and (max-width: 1199px) {
     padding-bottom: 16px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     font-size: 36px;
     line-height: 1.25;
-   }
+  }
   @media screen and (min-width: 1200px) {
     font-size: 48px;
     line-height: 1.25;
     padding-bottom: 15px;
-   }
+  }
 }
 .scanhero_item {
-  @include font (300, 16px, 1.25, #2B2B2B);
+  @include font(300, 16px, 1.25, #2b2b2b);
   @media screen and (min-width: 320px) and (max-width: 1199px) {
     padding-bottom: 16px;
-}
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  padding-right: 20px;
-} 
+    padding-right: 20px;
+  }
   @media screen and (min-width: 1200px) {
-      font-size: 18px;
-      line-height: 1.28;
-      padding-bottom: 24px;
-  } 
+    font-size: 18px;
+    line-height: 1.28;
+    padding-bottom: 24px;
+  }
 }
 .scanhero_wrap {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-     position: relative;
+    position: relative;
   }
   @media screen and (min-width: 1200px) {
-      padding-left: 72px;
-      padding-top: 75px;
-      padding-right: 120px;
-   }
+    padding-left: 72px;
+    padding-top: 75px;
+    padding-right: 120px;
+  }
 }
 .scanhero_text {
-  @include font (300, 16px, 1.25, #2B2B2B);
+  @include font(300, 16px, 1.25, #2b2b2b);
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-bottom: 20px;
-  } 
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-right: 250px;
-  } 
+  }
   @media screen and (min-width: 1200px) {
-      font-size: 18px;
-      line-height: 1.28;
+    font-size: 18px;
+    line-height: 1.28;
   }
 }
 .scanhero_photo {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-      position: absolute;
-      right: 0;
-      bottom: 40;
-      width: 241px;
-      height: 172px;
+    position: absolute;
+    right: 0;
+    bottom: 40;
+    width: 241px;
+    height: 172px;
   }
   @media screen and (min-width: 1200px) {
-      width: 435px;
-      height: 286px;
-   }
+    width: 435px;
+    height: 286px;
+  }
 }
-
-
-
-
 
 .scann {
   padding-top: 40px;
@@ -287,6 +283,8 @@
 
 .scann__btn {
   display: block;
+
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -321,10 +319,6 @@
     width: calc((100% - 96px) / 4);
     height: 210px;
     padding: 17px 22px 25px 22px;
-  }
-
-  .scann__btn {
-    width: 280px;
   }
 }
 
