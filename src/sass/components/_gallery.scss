@@ -8,20 +8,25 @@
   }
   @media screen and (min-width: 1440px) {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 0;
   }
 
 }
 
-
 .gallery__container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;  
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
   @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 768px;
+    padding: 0 32px;
   }
   @media screen and (min-width: 1440px) {
-    padding-left: 149px;
-    padding-right: 149px;
+    max-width: 1440px;
+    padding: 0 149px;
   }
 }
 
@@ -44,10 +49,11 @@
   }
   
   .gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 24px;
     @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
       gap: 32px;
     }
     @media screen and (min-width: 1440px) {

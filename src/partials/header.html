@@ -1,4 +1,4 @@
-<header>
+<header class="header">
   <div class="header-wrap container">
     <a class="logo-link" href="./index.html">
       <picture>
@@ -36,11 +36,13 @@
       data-menu-button
       aria-expanded="false"
     >
-      <svg class="" width="32" height="32">
+      <svg class="menu-button" width="24" height="24">
         <use
           class="menu-button__close"
           href="./images/sprite.svg#icon-cross"
         ></use>
+      </svg>
+      <svg class="menu-button menu-button__menu" width="32" height="32">
         <use
           class="menu-button__menu"
           href="./images/sprite.svg#icon-mobile-burger"
@@ -65,6 +67,72 @@
       </div>
     </div>
     <div class="mobile-menu header__menu" data-menu>
+      <div class="mobile-menu__bg container">
+        <div class="mobile-menu__bg-el1"></div>
+        <div class="mobile-menu__bg-el2"></div>
+        <div class="mobile-menu__bg-el3"></div>
+      </div>
+      
+      <div class="tab-menu__bg container">
+        <div class="tab-menu__bg-el-1"></div>
+        <div class="tab-menu__bg-el-2"></div>
+        <div class="tab-menu__bg-el-3"></div>
+        <div class="tab-menu__bg-el-4"></div>
+        <div class="tab-menu__bg-el-5"></div>
+        <div class="tab-menu__bg-el-6"></div>
+        <div class="tab-menu__bg-el-7">
+          <picture class="main-bg-wrap__photo">
+            <source srcset="
+                                  ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-1.jpg 1x,
+                                  ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-1@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <img src="./images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-1.jpg" alt="Фонове зображення" width="144">
+          </picture>
+        </div>
+        <div class="tab-menu__bg-el-8">
+          <picture class="main-bg-wrap__photo">
+            <source srcset="
+                                                  ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-2.jpg 1x,
+                                                  ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-2@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <img src="./images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-2.jpg" alt="Фонове зображення" width="144">
+          </picture>
+        </div>
+        <div class="tab-menu__bg-el-9"></div>
+        <div class="tab-menu__bg-el-10"></div>
+        <div class="tab-menu__bg-el-11"></div>
+        <div class="tab-menu__bg-el-12">
+          <picture class="main-bg-wrap__photo">
+            <source srcset="
+                                          ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-3.jpg 1x,
+                                          ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-3@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <img src="./images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-3.jpg" alt="Фонове зображення" width="144">
+          </picture>
+        </div>
+        <div class="tab-menu__bg-el-13"></div>
+        <div class="tab-menu__bg-el-14"></div>
+        <div class="tab-menu__bg-el-15"></div>
+        <div class="tab-menu__bg-el-16"></div>
+        <div class="tab-menu__bg-el-17"></div>
+        <div class="tab-menu__bg-el-18">
+          <picture class="main-bg-wrap__photo">
+            <source srcset="
+                                          ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-4.jpg 1x,
+                                          ./images/bitmap/main/tablet/backgraund-imgs/gallery-bgi-4@2x.jpg 2x"
+              media="(min-width: 768px)">
+            <img src="./images/bitmap/main/desktop/backgraund-imgs/gallary-bgi-4.jpg" alt="Фонове зображення" width="144">
+          </picture>
+        </div>
+        <div class="tab-menu__bg-el-19"></div>
+        <div class="tab-menu__bg-el-20"></div>
+        <div class="tab-menu__bg-el-21"></div>
+        <div class="tab-menu__bg-el-22">
+      
+        </div>
+        <div class="tab-menu__bg-el-23"></div>
+      </div>
+
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__item">
@@ -98,7 +166,9 @@
           </li>
         </ul>
       </nav>
-      <div class="modal-contact__menu">
+    </div>
+    <div class="modal-contact__menu">
+      <div class="triangle-wrap">
         <ul class="header-contact__list">
           <li class="header-contact__item">
             <a class="header-contact__link" href="tel:+380936432288">

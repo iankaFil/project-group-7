@@ -3,23 +3,34 @@
     padding-right: 20px;
     padding-bottom: 40px;
     @media screen and (min-width:768px) {
-        padding-left: 32px;
-        padding-bottom: 40px;
+        padding: 30px 32px 40px;
     }
     @media screen and (min-width:1440px) {
-        padding-left: 149px;
+        padding-top: 100px;
         padding-bottom: 100px;
+        padding-left: 149px;
     }
-    
 }
 
-.methods__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.28;
-    text-transform: uppercase;
-    color: #487996;
-    margin-bottom: 16px;
+// .container {
+//   padding-top: 44px;
+//   padding-bottom: 40px;
+//   @media screen and (min-width: 768px) {
+//     padding-top: 30px;
+//     padding-left: 32px;
+//   }
+//   @media screen and (min-width: 1440px) {
+//     padding-bottom: 100px;
+//     padding-left: 149px;
+//   }
+// }
+
+.modeling-hero__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.24;
+  color: #487996;
+  margin-bottom: 16px;
 
     @media screen and (min-width:768px) {
         font-size: 24px;
@@ -31,6 +42,12 @@
     }
 }
 
+.modeling-hero__list {
+    @media screen and (min-width:1440px) {
+        display: flex;
+        gap: 72px;
+    }
+}
 .methods__list {
     position: relative;
     margin-bottom: 40px;
