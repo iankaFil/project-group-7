@@ -62,10 +62,9 @@
   }
 }
 
-// .photos__link {
-//     // cursor: zoom-in;
-//     // cursor: pointer;
-// }
+.photos__link {
+    cursor: zoom-in;
+}
 
 // анимация загрузки
 .loading {
@@ -127,7 +126,6 @@
 .element_01 {
   left: 0;
   top: 13px;
-  // top: 27px;
   animation-delay: 0.45s;
   -o-animation-delay: 0.45s;
   -ms-animation-delay: 0.45s;
@@ -142,9 +140,7 @@
 
 .element_02 {
   left: 4px;
-  // left: 8px;
   top: 4px;
-  // top: 10px;
   animation-delay: 0.6s;
   -o-animation-delay: 0.6s;
   -ms-animation-delay: 0.6s;
@@ -158,9 +154,7 @@
 }
 
 .element_03 {
-  // left: 25px;
   left: 13px;
-  // top: 3px;
   top: 1px;
   animation-delay: 0.75s;
   -o-animation-delay: 0.75s;
@@ -312,15 +306,35 @@
   width: 100%;
   height: 100%;
   background: rgba(43, 43, 43, 0.8);
-    backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 .overlay__img-wrap {
   position: absolute;
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 42px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: block;
+
+  @media screen and (min-width: 480px) {
+    width: 236px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    width: 554px;
+    padding: 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 906px;
+    padding: 0;
+  }
 }
 
 .close {
@@ -332,32 +346,68 @@
   font-size: 30px;
   text-decoration: none;
 }
+.arrow-scroll {
+  display: flex;
+}
 
 .arrow-wrap {
   position: absolute;
   display: flex;
   color: #ffffff;
-  
+  top: 50%;
+  transform: translateY(-50%);
+}
+.arrow-right {
+  right: 21px;
+  fill: currentColor;
+
+  @media screen and (min-width: 480px) {
+    right: -20px;
+  }
+  @media screen and (min-width: 768px) {
+    right: -42px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    right: -52px;
+  }
+}
+
+.arrow-left {
+  left: 19px; 
+  fill: currentColor;
+
+  @media screen and (min-width: 480px) {
+    left: -21px;
+  }
+
+  @media screen and (min-width: 768px) {
+    left: -42px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    left: -52px;
+  }
+}
+
+.overlay__icon {
+  fill: #ffffff;
+  width: 11px;
+  height: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     width: 26px;
     height: 26px;
   }
-}
-  .arrow-right {
-      top: 50%;
-      right: -73px;
-      fill: currentColor;
-    }
-  .arrow-left {
-    top: 50%;
-    left: -73px; 
-    fill: currentColor;
+  
+  @media screen and (min-width: 1440px) {
+    width: 42px;
+    height: 42px;
   }
 
-  .overlay__icon {
-    fill: #ffffff;
-    .arrow-scroll:hover & {
-      fill: $accentTextColor;
+  .arrow-scroll:hover &,
+  .arrow-scroll:focus & {
+    fill: $accentTextColor;
     }
-  }
+}
 
