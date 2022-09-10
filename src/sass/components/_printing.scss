@@ -1,48 +1,65 @@
 
-.container .processes{
-    @include desktop{
-        margin-left: 117px;
-        margin-right: 204px;
-    }
+// .container .processes{@include desktop{width:1055px;}}
+
+.our-service
+{ 
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.our-processes{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 55px;
+@include tablet{gap:60px;};
+@include desktop{gap:100px;width: 1054px;};
+
 }
 
-.our-processes
-{
+.process-item {
+    border: 1px solid #ff6347;
     display: flex;
-    flex-direction: column;
-    gap: 50px;
-    @include tablet{gap:60px};
-    @include desktop{
-      
-        gap: 100px};
+    flex-direction: column;gap: 20px;
+    @include tablet {flex-direction: row;gap:32px};
+    @include desktop{gap:86px}
 }
-
-.process-item{
-width: 100%;
-border: 1px solid teal;
-@include tablet{
-    display: flex; 
-    gap: 32px;
-    align-items: flex-start;} 
-@include desktop{gap:85px;}
-}
-.process-thumb{
-    height:100%;
-    @include desktop {
-        Width: 236px;
-        Height: 324px;}
-    }
 
 .process-description{
+    color: $mainTextColor;
     font-style: normal;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 1.27;}
+    font-size: 16px;
+    line-height: 1.25;
+    @include tablet{font-weight: 400;};
+    @include desktop{
+        font-weight: 300;
+        font-size: 18px;
+        line-height:1.43;
+    };
+}
+.process-description span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $accentTextColor;
+}
+.process-description:not(:last-child){margin-bottom: 16px;@include desktop{margin-bottom: 24px;}}
 
+.order-link
+{   
+    padding: 16px 32px;
+        box-shadow: $btnBoxShadow;
+        border-radius: 30.5px;
+        background-color: $btnBckgColor;
+        color: $accentTextColor;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
 
-.process-description:not(:last-child){
-    margin-bottom: 16px;
-    @include tablet {margin-bottom: 24px;};}
-
-.order-link{
-@include btn}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    @include tablet{
+        width: 280px;
+        height: 50px;}
+}
