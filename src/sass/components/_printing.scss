@@ -1,6 +1,4 @@
 
-// .container .processes{@include desktop{width:1055px;}}
-
 .our-service
 { 
     padding-top: 100px;
@@ -16,7 +14,7 @@
 }
 
 .process-item {
-    border: 1px solid #ff6347;
+
     display: flex;
     flex-direction: column;gap: 20px;
     @include tablet {flex-direction: row;gap:32px};
