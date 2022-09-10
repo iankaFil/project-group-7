@@ -1,6 +1,7 @@
 .methods-box {
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 40px;
     @media screen and (min-width:768px) {
         padding-left: 32px;
         padding-bottom: 40px;
@@ -30,6 +31,14 @@
     }
 }
 
+.methods__list {
+    position: relative;
+    margin-bottom: 40px;
+
+    @media screen and(min-width:768px) {
+        margin-bottom: 0;
+    }
+}
 
 .methods__item {
     position: relative;
@@ -64,3 +73,44 @@
     }
 }
 
+.methods-wrap {
+    @media screen and(min-width:768px) {
+        display: flex;
+    }
+    
+}
+
+.background-box {
+    width: 100%;
+    height: 164px;
+    background-image: url(../images/bitmap/3d-modeling/mobile/3d-model.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/bitmap/3d-modeling/mobile/3d-model@2x.png);
+    }
+
+    @media screen and (min-width:768px) {
+        position: absolute;
+        left: 490px;
+        width: 246px;
+        height: 144px;
+        background-image: url(../images/bitmap/3d-modeling/tablet/3d-model.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/bitmap/3d-modeling/tablet/3d-model@2x.png);
+        }
+    }
+
+    @media screen and (min-width:1440px) {
+        position: absolute;
+        top: 420px;
+        left: 736px;
+        width: 555px;
+        height: 301px;
+        background-image: url(../images/bitmap/3d-modeling/desktop/3d-model.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(../images/bitmap/3d-modeling/desktop/3d-model@2x.png);
+        }
+    }
+}
