@@ -1,4 +1,24 @@
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
+  }
+}
+
 .contacts__title {
+  margin-top: 40px;
+  margin-bottom: 16px;
   color: $accentTextColor;
   width: 280px;
   font-weight: 700;
@@ -6,7 +26,7 @@
   line-height: 1.25em;
 }
 
-.contacts__list {
+.contact__list {
   padding-bottom: 40px;
 }
 
@@ -43,6 +63,7 @@
 }
 
 .contacts__form-input {
+  margin-bottom: 44px;
   border: none;
   border-bottom: $inputBorder;
   width: 280px;
@@ -87,12 +108,18 @@
   gap: 24px;
 }
 
+.contacts__work-time {
+  margin-top: 8px;
+}
+
+.contacts__work-time:nth-child(1){
+  margin: 0;
+}
+
 .contacts__number,
 .contacts__mail,
 .contacts__work-time {
   width: 247px;
-  height: 20px;
-
   font-family: 'Cera Pro';
   font-style: normal;
   font-weight: 400;
@@ -102,8 +129,8 @@
   color: $mainTextColor;
 }
 
-.contacts__work-time {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+.button {
+  @include btn ;
+  margin-top: 40px;
+  width: 280px;
 }
