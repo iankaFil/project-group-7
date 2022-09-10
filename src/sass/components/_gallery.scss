@@ -8,7 +8,7 @@
   }
   @media screen and (min-width: 1440px) {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 0;
   }
 
 }
@@ -49,11 +49,11 @@
   }
   
   .gallery__list {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     column-gap: 24px;
     @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
       gap: 32px;
     }
     @media screen and (min-width: 1440px) {
