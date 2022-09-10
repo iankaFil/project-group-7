@@ -1,11 +1,10 @@
-.container {
-    padding-top: 44px;
-    padding-bottom: 40px;
+.modeling-box {
+    padding: 40px 20px;
     @media screen and (min-width:768px) {
-        padding-top: 30px;
-        padding-left: 32px;
+        padding: 30px 32px 40px;
     }
     @media screen and (min-width:1440px) {
+        padding-top: 100px;
         padding-bottom: 100px;
         padding-left: 149px;
     }
@@ -28,14 +27,10 @@ margin-bottom: 16px;
 }
 
 .modeling-hero__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
     @media screen and (min-width:1440px) {
         display: flex;
         gap: 72px;
     }
-    
 }
 
 .modeling-hero__item {
@@ -43,9 +38,17 @@ font-weight: 300;
 font-size: 16px;
 line-height: 1.25;
 color: #2B2B2B;
+max-width: 440px;
+&:not(:last-child) {
+    margin-bottom: 16px;
+    @media screen and (min-width:1440px) {
+        margin-bottom: 0;
+    }
+}
+
 
 @media screen and (min-width:768px) {
-    width: 515px;
+    max-width: 515px;
 }
 @media screen and (min-width:1440px) {
     font-size: 18px;
