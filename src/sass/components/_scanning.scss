@@ -3,6 +3,8 @@
 }
 
 .scann__title {
+  @include font(700, 18px, 1.28, $accentTextColor);
+  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
@@ -13,31 +15,244 @@
 }
 
 .scann__item {
-  width: calc(100% / 2 - 20px);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: calc((100% - 20px) / 2);
   height: 182px;
-  padding: 18px 20px;
+  padding: 14px 16px;
   text-align: center;
 
   background: #ffffff;
   opacity: 0.8;
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8),
-    inset -1px -1px 16px #ffffff;
+  box-shadow: $imgBoxShadow;
   border-radius: 50px 0px;
 }
 
-.scann__item::before {
+.scann__item-1::before {
   content: '';
+  width: 91px;
+  height: 81px;
 
   background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-1@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-1.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-1@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-1.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-1@2x.png);
+  }
+}
+
+.scann__item-2::before {
+  content: '';
+  width: 91px;
+  height: 81px;
+
+  background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-2@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-2.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-2@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-2.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-2@2x.png);
+  }
+}
+
+.scann__item-3::before {
+  content: '';
+  width: 91px;
+  height: 81px;
+
+  background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-3@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-3.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-3@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-3.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-3@2x.png);
+  }
+}
+
+.scann__item-4::before {
+  content: '';
+  width: 91px;
+  height: 81px;
+
+  background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/mobile/scan-process-4@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-4.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bitmap/3d-scanning/tablet/scan-process-4@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-4.png);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scan-process-4@2x.png);
+  }
 }
 
 .scann__text {
+  @include font(400, 14px, 1.29, $accentTextColor);
   text-align: center;
 }
 
 .button {
   @include btn;
+}
+
+.scann__btn {
+  display: block;
+  width: 280px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// -----------------адаптив таблетки-------
+
+@media screen and (min-width: 768px) {
+  .scann {
+    padding-bottom: 60px;
+  }
+
+  .scann__title {
+    @include font(700, 24px, 1.25, $accentTextColor);
+    margin-bottom: 24px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .scann__list {
+    row-gap: 32px;
+  }
+
+  .scann__item-1::before,
+  .scann__item-2::before,
+  .scann__item-3::before,
+  .scann__item-4::before {
+    width: 107px;
+    height: 94px;
+  }
+
+  .scann__item {
+    width: calc((100% - 96px) / 4);
+    height: 210px;
+    padding: 17px 22px 25px 22px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .scann {
+    padding-top: 22px;
+    padding-bottom: 80px;
+  }
+
+  .scann__title {
+    @include font(700, 36px, 1.25, $accentTextColor);
+    margin-bottom: 40px;
+    padding-left: 149px;
+  }
+
+  .scann__item-1::before,
+  .scann__item-2::before,
+  .scann__item-3::before,
+  .scann__item-4::before {
+    width: 240px;
+    height: 240px;
+  }
+
+  .scann__item {
+    width: calc((100% - 96px) / 4);
+    height: 381px;
+    padding: 51px 40px 27px 40px;
+  }
 }
