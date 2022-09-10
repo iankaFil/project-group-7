@@ -15,14 +15,15 @@
 
 
 .gallery__container {
-  @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  @media screen and (min-width: 1440px) {
-    padding-left: 149px;
-    padding-right: 149px;
-  }
+  padding: 0 20px;  
+    @media screen and (min-width: 768px) {
+      padding: 0 32px;
+      padding: 0 32px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 0 149px;
+      padding: 0 149px;
+    }
 }
 
 .gallery__title {
@@ -44,6 +45,7 @@
   }
   
   .gallery__list {
+
     column-gap: 24px;
     @media screen and (min-width: 768px) {
       display: flex;
