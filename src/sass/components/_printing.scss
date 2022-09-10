@@ -32,10 +32,14 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    width: 100%;
 
     @media screen and (min-width: 768px) {
         flex-wrap: nowrap;
+        width: 100%;
+    }
+    @media screen and (min-width: 1440px) {
+        flex-wrap: nowrap;
+        width: 100%;
     }
 }
 
@@ -62,6 +66,86 @@
     align-content: center;
 }
 
+.hero-img__1 {
+    margin-top: 27.08px;
+    margin-bottom: 17.06px;
+    margin-left: 17.08px;
+    margin-right: 23.09px;
+
+    @media screen and (min-width: 768px) {
+    margin-top: 31.14px;
+    margin-bottom: 19.61px;
+    margin-left: 19.97px;
+    margin-right: 27px;
+    }
+    @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+    margin-bottom: 20.97px;
+    margin-left: 40px;
+    margin-right: 40px;
+    }
+}
+
+.hero-img__2 {
+    margin-top: 38.22px;
+    margin-bottom: 16.67px;
+    margin-left: 17.16px;
+    margin-right: 11.96px;
+
+    @media screen and (min-width: 768px) {
+    margin-top: 44.02px;
+    margin-bottom: 19.2px;
+    margin-left: 20.06px;
+    margin-right: 13.98px;
+    }
+    @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+    margin-bottom: 20.24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    }
+}
+
+.hero-img__3 {
+    margin-top: 31.32px;
+    margin-bottom: 16.67px;
+    margin-left: 43.68px;
+    margin-right: 43.16px;
+
+    @media screen and (min-width: 768px) {
+    margin-top: 36.01px;
+    margin-bottom: 19.16px;
+    margin-left: 51.07px;
+    margin-right: 50.46px;
+    }
+    @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+    margin-bottom: 20.24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    }
+}
+
+.hero-img__4 {
+    margin-top: 23.9px;
+    margin-bottom: 9.25px;
+    margin-left: 22.88px;
+    margin-right: 23.4px;
+
+    @media screen and (min-width: 768px) {
+    margin-top: 27.48px;
+    margin-bottom: 10.63px;
+    margin-left: 26.75px;
+    margin-right: 27.36px;
+    }
+    @media screen and (min-width: 1440px) {
+    margin-top: 40px;
+    margin-bottom: 20.24px;
+    margin-left: 40px;
+    margin-right: 40px;
+    }
+}
+
 .printing-hero__title {
     font-family: 'Cera Pro';
     font-style: normal;
@@ -69,12 +153,10 @@
     font-size: 14px;
     line-height: 1.3em;
     text-align: center;
-    margin-top: 17px;
 
     color: $accentTextColor;
 
     @media screen and (min-width: 1440px) {
         font-size: 18px;
-        margin-top: 21px;
     }
 }
