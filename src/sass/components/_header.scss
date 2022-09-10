@@ -82,12 +82,14 @@
   flex-direction: column;
   @media screen and (min-width: 1440px) {
     display: none;
+    width: 131px;
     position: absolute;
-    right: 30px;
+    right: -27%;
     z-index: 1;
     text-align: center;
   }
 }
+
 .dropmenu__content .header-dropmenu__link {
   @include font(500, 24px, 1.25, $accentTextColor);
   text-transform: none;
@@ -107,6 +109,9 @@
 }
 .header-dropmenu__link:not(:last-child) {
   margin-bottom: 24px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 4px;
+  }
 }
 
 .header-dropmenu__link::before {
