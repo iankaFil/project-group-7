@@ -1,14 +1,3 @@
-.printing {
-    margin-bottom: 37.82px;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 40px;
-    }
-    @media screen and (min-width: 1440px) {
-        margin-bottom: 100px;
-    }
-}
-
 .printing__title {
     font-family: 'Cera Pro';
     font-style: normal;
@@ -40,14 +29,23 @@
 .printing__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    @media screen and (min-width: 1440px) {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
 }
 
 .printing__item {
-    // width: calc(100% / 2 - 20px);
     width: 130px;
     height: 158px;
-    text-align: center;
     background: #FFFFFF;
     opacity: 0.8;
     box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
