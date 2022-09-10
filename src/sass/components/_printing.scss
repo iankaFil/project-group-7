@@ -1,0 +1,80 @@
+.printing__title {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.25em;
+
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+
+    color: $accentTextColor;
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+
+        margin-left: 32px;
+        margin-right: 88px;
+    }
+    @media screen and (min-width: 1440px) {
+        font-size: 48px;
+
+        margin-left: 149px;
+        margin-right: 667px;
+        margin-bottom: 24px;
+    }
+}
+
+.printing__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+    }
+}
+
+.printing__item {
+    width: 130px;
+    height: 158px;
+    background: #FFFFFF;
+    opacity: 0.8;
+    box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
+    border-radius: 50px 0px;
+
+    @media screen and (min-width: 768px) {
+        width: 152px;
+        height: 182px;
+    }
+    @media screen and (min-width: 1440px) {
+        width: 320px;
+        height: 382px;
+    }
+}
+
+.printing-hero__img {
+    margin: 0 auto;
+    align-content: center;
+}
+
+.printing-hero__title {
+    font-family: 'Cera Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3em;
+    text-align: center;
+    margin-top: 17px;
+
+    color: $accentTextColor;
+
+    @media screen and (min-width: 1440px) {
+        font-size: 18px;
+        margin-top: 21px;
+    }
+}
