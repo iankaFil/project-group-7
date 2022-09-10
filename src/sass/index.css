@@ -1,6 +1,6 @@
 @charset "UTF-8";
-<<<<<<< Updated upstream
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
 body {
   font-family: "Cera Pro", sans-serif;
   color: #2b2b2b;
@@ -10,24 +10,25 @@ body {
   padding: 0 20px;
   margin: 0 auto;
 }
+
 @media screen and (max-width: 480px) {
   .container {
     max-width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
   }
 }
 
-=======
->>>>>>> Stashed changes
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Bold.eot");
@@ -35,6 +36,7 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Light.eot");
@@ -42,6 +44,7 @@ body {
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Regular.eot");
@@ -49,6 +52,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Medium.eot");
@@ -56,6 +60,7 @@ body {
   font-weight: 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Caviar Dreams";
   src: url("../fonts/CaviarDreams.eot");
@@ -63,6 +68,7 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Caviar Dreams";
   src: url("../fonts/Caviar_Dreams_Bold.eot");
@@ -70,6 +76,7 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
 ul,
 h1,
 h2,
@@ -93,35 +100,6 @@ a {
 img {
   display: block;
   height: auto;
-<<<<<<< Updated upstream
-}
-
-.header-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-}
-
-.header-nav__list {
-  display: flex;
-  padding-top: 14px;
-}
-
-.header-nav__item:not(:last-child) {
-  margin-right: 56px;
-}
-
-.header-contact__list {
-  margin-left: auto;
-}
-
-.dropbtn::after {
-  content: "";
-  color: #000;
-}
-
-.container {
-=======
   max-width: 100%;
 }
 
@@ -137,6 +115,7 @@ img {
   text-align: center;
   color: #2b2b2b;
 }
+
 @media screen and (min-width: 768px) {
   .hero__title {
     width: 336px;
@@ -144,6 +123,7 @@ img {
     font-size: 24px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero__title {
     width: 630px;
@@ -160,6 +140,7 @@ img {
   text-align: center;
   color: #2b2b2b;
 }
+
 @media screen and (min-width: 768px) {
   .hero__text {
     margin-top: 60px;
@@ -167,6 +148,7 @@ img {
     line-height: 1.17;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero__text {
     font-size: 36px;
@@ -178,11 +160,13 @@ img {
   justify-content: center;
   gap: 15px;
 }
+
 @media screen and (min-width: 768px) {
   .hero__list {
     gap: 29px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero__list {
     gap: 32px;
@@ -192,6 +176,7 @@ img {
 .hero__img1 {
   border-radius: 0px 35px 0px 0px;
 }
+
 @media screen and (min-width: 1440px) {
   .hero__img1 {
     border-radius: 0px 72px 0px 0px;
@@ -205,6 +190,7 @@ img {
 .hero__img3 {
   border-radius: 0px 25px;
 }
+
 @media screen and (min-width: 1440px) {
   .hero__img3 {
     border-radius: 0px 72px;
@@ -219,11 +205,13 @@ img {
   bottom: 8px;
   left: 102px;
 }
+
 @media screen and (max-width: 767px) {
   .hero__link {
     display: none;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero__link {
     width: 32px;
@@ -241,38 +229,28 @@ img {
 }
 
 .photos__container {
->>>>>>> Stashed changes
   margin: 0 auto;
   margin-bottom: 60px;
   padding: 0 20px;
   width: 100%;
 }
+
 @media screen and (min-width: 480px) {
-<<<<<<< Updated upstream
-  .container {
-=======
   .photos__container {
->>>>>>> Stashed changes
     max-width: 480px;
   }
 }
+
 @media screen and (min-width: 768px) {
-<<<<<<< Updated upstream
-  .container {
-=======
   .photos__container {
->>>>>>> Stashed changes
     max-width: 768px;
     padding: 0 32px;
     margin-bottom: 80px;
   }
 }
+
 @media screen and (min-width: 1440px) {
-<<<<<<< Updated upstream
-  .container {
-=======
   .photos__container {
->>>>>>> Stashed changes
     max-width: 1440px;
     padding: 0 149px;
     margin-bottom: 100px;
@@ -285,6 +263,7 @@ img {
   margin-bottom: 16px;
   color: #487996;
 }
+
 @media screen and (min-width: 768px) {
   .photos__title {
     font-size: 36px;
@@ -292,6 +271,7 @@ img {
     margin-bottom: 32px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .photos__title {
     font-size: 48px;
@@ -300,14 +280,6 @@ img {
   }
 }
 
-<<<<<<< Updated upstream
-=======
-ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
->>>>>>> Stashed changes
 @media screen and (min-width: 768px) {
   .photos__list {
     display: flex;
@@ -329,11 +301,13 @@ ul {
 .loading {
   padding-top: 16px;
 }
+
 @media screen and (min-width: 768px) and (max-width: 1439px) {
   .loading {
     display: none;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .loading {
     padding-top: 19px;
@@ -508,101 +482,22 @@ ul {
   0% {
     background-color: rgb(0, 0, 0);
   }
+
   100% {
     background-color: rgb(255, 255, 255);
   }
 }
+
 @-webkit-keyframes loading-spinner {
   0% {
     background-color: rgb(0, 0, 0);
   }
+
   100% {
     background-color: rgb(255, 255, 255);
   }
 }
-<<<<<<< Updated upstream
-.printing__title {
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25em;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 16px;
-  color: #487996;
-}
-@media screen and (min-width: 768px) {
-  .printing__title {
-    font-size: 36px;
-    margin-left: 32px;
-    margin-right: 88px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .printing__title {
-    font-size: 48px;
-    margin-left: 149px;
-    margin-right: 667px;
-    margin-bottom: 24px;
-  }
-}
 
-.printing__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .printing__list {
-    flex-wrap: nowrap;
-  }
-}
-
-.printing__item {
-  width: 130px;
-  height: 158px;
-  background: #FFFFFF;
-  opacity: 0.8;
-  box-shadow: inset 1px 1px 16px rgba(203, 203, 203, 0.8), inset -1px -1px 16px #FFFFFF;
-  border-radius: 50px 0px;
-}
-@media screen and (min-width: 768px) {
-  .printing__item {
-    width: 152px;
-    height: 182px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .printing__item {
-    width: 320px;
-    height: 382px;
-  }
-}
-
-.printing-hero__img {
-  margin: 0 auto;
-  align-content: center;
-}
-
-.printing-hero__title {
-  font-family: "Cera Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.3em;
-  text-align: center;
-  margin-top: 17px;
-  color: #487996;
-}
-@media screen and (min-width: 1440px) {
-  .printing-hero__title {
-    font-size: 18px;
-    margin-top: 21px;
-=======
 .popup:not(:target) {
   display: none;
 }
@@ -750,12 +645,14 @@ ul {
   color: #487996;
   text-transform: uppercase;
 }
+
 @media screen and (min-width: 768px) {
   .gallery__title {
     margin-bottom: 32px;
     font-size: 36px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .gallery__title {
     margin-bottom: 62px;
@@ -765,8 +662,9 @@ ul {
 
 .gallery__list {
   -moz-column-gap: 24px;
-       column-gap: 24px;
+  column-gap: 24px;
 }
+
 @media screen and (min-width: 768px) {
   .gallery__list {
     display: flex;
@@ -774,6 +672,7 @@ ul {
     gap: 32px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .gallery__list {
     gap: 40px 32px;
@@ -783,11 +682,13 @@ ul {
 .gallery__item {
   width: 280px;
 }
+
 @media screen and (min-width: 768px) {
   .gallery__item {
     width: 336px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .gallery__item {
     width: 555px;
@@ -807,11 +708,13 @@ ul {
   line-height: 1.25;
   color: #487996;
 }
+
 @media screen and (min-width: 768px) {
   .gallery__description {
     margin-top: 16px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .gallery__description {
     margin-top: 16px;
@@ -835,7 +738,11 @@ ul {
   height: 400px;
   background-position: center;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero-take-order__picture {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img@2x.jpg);
   }
@@ -844,6 +751,7 @@ ul {
 .hero-take-order__text-item {
   margin-bottom: 24px;
 }
+
 .hero-take-order__text-item:last-child {
   margin-bottom: 60px;
 }
@@ -869,7 +777,11 @@ ul {
   border-top-left-radius: 11px;
   border-bottom-right-radius: 11px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero-take-order__item-one {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-1@2x.jpg);
   }
@@ -882,7 +794,11 @@ ul {
   border-bottom-right-radius: 72px;
   border-top-left-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero-take-order__item-two {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-2@2x.jpg);
   }
@@ -894,7 +810,11 @@ ul {
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3.jpg);
   border-bottom-right-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero-take-order__item-three {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3@2x.jpg);
   }
@@ -938,7 +858,11 @@ ul {
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
   border-top-right-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .mosaics__figure1 {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
@@ -951,7 +875,11 @@ ul {
   background-position: top;
   border-bottom-left-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .mosaics__figure2 {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
@@ -965,7 +893,11 @@ ul {
   border-top-left-radius: 72px;
   border-bottom-right-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .mosaics__figure3 {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
@@ -979,7 +911,11 @@ ul {
   border-bottom-left-radius: 72px;
   border-top-right-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .mosaics__figure4 {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
@@ -992,7 +928,11 @@ ul {
   background-position: bottom;
   border-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .mosaics__figure5 {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
@@ -1005,10 +945,13 @@ ul {
   background-position: bottom right;
   border-bottom-right-radius: 72px;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .mosaics__figure6 {
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
->>>>>>> Stashed changes
   }
 }
 
@@ -1115,4 +1058,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 8px;
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
