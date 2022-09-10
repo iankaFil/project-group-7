@@ -43,7 +43,10 @@
 .hero__list {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
+  @media screen and (min-width: 350px) {
+    gap: 15px;
+  }
   @media screen and (min-width: 768px) {
     gap: 29px;
   }
@@ -86,6 +89,10 @@
     top: 15px;
     left: 81px;
   }
+}
+
+.hero__item {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 }
 
 .hero__icon {
