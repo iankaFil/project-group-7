@@ -1,3 +1,92 @@
+.scanhero_box {
+  @media screen and (min-width: 1200px) {
+      display: flex;
+   }
+}
+.scanhero_info {
+  @media screen and (min-width: 1200px) {
+     padding-left: 100px;
+  } 
+}
+.scanhero_list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+     padding-right: 222px;
+   }
+}
+.scanhero_title {
+  @include font (700, 24px, 1.25, #487996);
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    padding-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 36px;
+    line-height: 1.25;
+   }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 1.25;
+    padding-bottom: 15px;
+   }
+}
+.scanhero_item {
+  @include font (300, 16px, 1.25, #2B2B2B);
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    padding-bottom: 16px;
+}
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  padding-right: 20px;
+} 
+  @media screen and (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 1.28;
+      padding-bottom: 24px;
+  } 
+}
+.scanhero_wrap {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+     position: relative;
+  }
+  @media screen and (min-width: 1200px) {
+      padding-left: 72px;
+      padding-top: 75px;
+      padding-right: 120px;
+   }
+}
+.scanhero_text {
+  @include font (300, 16px, 1.25, #2B2B2B);
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-bottom: 20px;
+  } 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 250px;
+  } 
+  @media screen and (min-width: 1200px) {
+      font-size: 18px;
+      line-height: 1.28;
+  }
+}
+.scanhero_photo {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      position: absolute;
+      right: 0;
+      bottom: 40;
+      width: 241px;
+      height: 172px;
+  }
+  @media screen and (min-width: 1200px) {
+      width: 435px;
+      height: 286px;
+   }
+}
+
+
+
+
+
+
+
+
+
 .scann {
   padding: 40px 0;
 }
