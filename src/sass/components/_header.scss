@@ -4,10 +4,6 @@
   text-align: center;
   padding-top: 20px;
   padding-bottom: 40px;
-  @media screen and (min-width: 1440px) {
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
 }
 .logo-link {
   margin-right: auto;
@@ -26,7 +22,7 @@
   }
   @media screen and (min-width: 1440px) {
     display: flex;
-    margin-top: 14px;
+    margin-top: 6px;
     gap: 56px;
   }
 }
