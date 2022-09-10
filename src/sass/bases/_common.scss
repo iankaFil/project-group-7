@@ -31,8 +31,22 @@ body.menu-open {
   }
 }
 .title {
-  @include font($fw, $fs, $lh, $accentTextColor);
+  @include font($fw, 24px, $lh, $accentTextColor);
+
+  @include tablet {
+    @include font($fw, 36px, $lh, $accentTextColor);
+  }
+  @include desktop {
+    @include font($fw, $fs, $lh, $accentTextColor);
+  }
 }
 .subtitle {
-  @include font($fw, 36px, $lh, $accentTextColor);
+  @include font($fw, 18px, 1.27, $accentTextColor);
+
+  @include tablet {
+    @include font($fw, 24px, $lh, $accentTextColor);
+  }
+  @include desktop {
+    @include font($fw, 36px, $lh, $accentTextColor);
+  }
 }
