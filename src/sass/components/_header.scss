@@ -1,19 +1,9 @@
-// .mobile-menu {
-//   background-image: url(../images/bitmap/decor.png);
-//   background-repeat: no-repeat;
-//   width: 100%;
-//   height: 100%;
-// }
 .header-wrap {
   position: relative;
   display: flex;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 40px;
-  @media screen and (min-width: 1440px) {
-    margin-top: 40px;
-    margin-bottom: 100px;
-  }
 }
 .logo-link {
   margin-right: auto;
@@ -21,19 +11,7 @@
     margin-right: 253px;
   }
 }
-// .logo {
-//   max-width: 101px;
-//   height: 25px;
 
-//   @media screen and (min-width: 768px) {
-//     width: 125px;
-//     height: 31px;
-//   }
-//   @media screen and (min-width: 1440px) {
-//     width: 192px;
-//     height: 48px;
-//   }
-// }
 .header-nav__list {
   margin-top: 60px;
   display: block;
@@ -44,7 +22,7 @@
   }
   @media screen and (min-width: 1440px) {
     display: flex;
-    margin-top: 14px;
+    margin-top: 6px;
     gap: 56px;
   }
 }
@@ -104,12 +82,14 @@
   flex-direction: column;
   @media screen and (min-width: 1440px) {
     display: none;
+    width: 131px;
     position: absolute;
-    right: 30px;
+    right: -27%;
     z-index: 1;
     text-align: center;
   }
 }
+
 .dropmenu__content .header-dropmenu__link {
   @include font(500, 24px, 1.25, $accentTextColor);
   text-transform: none;
@@ -129,6 +109,9 @@
 }
 .header-dropmenu__link:not(:last-child) {
   margin-bottom: 24px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 4px;
+  }
 }
 
 .header-dropmenu__link::before {
@@ -205,7 +188,6 @@
   text-align: center;
 }
 .dropmenu-lang__content .dropmenu-lang__link {
-  // width: 131px;
   text-decoration: none;
   display: block;
 }
