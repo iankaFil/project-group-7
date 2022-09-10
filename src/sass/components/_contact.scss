@@ -89,7 +89,9 @@
 }
 
 .contacts__form-title--position {
-  text-align: end;
+@include tablet {
+text-align: end;
+}
 }
 
 .contacts__form-lable {
