@@ -19,6 +19,7 @@
   gap: 16px 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
 
   @media screen and (min-width: 355px) and (max-width: 767px) {
     max-width: 280px;
@@ -238,7 +239,7 @@
   }
 
   .scann__btn {
-    width: 277px;
+    width: 280px;
   }
 }
 
@@ -254,6 +255,10 @@
     @include font(700, 36px, 1.25, $accentTextColor);
     margin-bottom: 40px;
     padding-left: 149px;
+  }
+
+  .scann__list {
+    margin-bottom: 80px;
   }
 
   .scann__item-1::before,
