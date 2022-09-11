@@ -76,8 +76,8 @@
   height: 16px;
 
   position: relative;
-  bottom: 8px;
-  left: 102px;
+  bottom:12px;
+  left: 115px;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -86,9 +86,13 @@
     width: 32px;
     height: 32px;    
 
-    top: 15px;
-    left: 81px;
+    top: -26px;
+    left: 210px;
   }
+}
+
+.hero__item {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.3));
 }
 
 .hero__icon {
