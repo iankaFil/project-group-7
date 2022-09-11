@@ -6,11 +6,14 @@
   }
   @media screen and (min-width: 1440px) {
     margin-top: 0;
-    padding-top: 0;
+    // padding-top: 0;
     margin-bottom: 100px;
   }
 }
-
+.printing-container {
+  padding-left: 0;
+  padding-right: 0;
+}
 .printing__title {
   font-family: 'Cera Pro';
   font-style: normal;
