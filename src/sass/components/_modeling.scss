@@ -144,16 +144,24 @@
   @media screen and (min-width: 1440px) {
     font-size: 18px;
   }
-  .container {
-    @media screen and (min-width: 768px) {
-      padding-left: 32px;
-      padding-bottom: 40px;
-    }
-    @media screen and (min-width: 1440px) {
-      padding-left: 149px;
-      padding-bottom: 100px;
-    }
+}
+  // .modeling__container {
+  //   @media screen and (min-width: 768px) {
+  //     padding-left: 32px;
+  //     padding-bottom: 40px;
+  //   }
+  //   @media screen and (min-width: 1440px) {
+  //     padding-left: 149px;
+  //     padding-bottom: 100px;
+  //   }
+  // }
+
+.methods {
+  padding-top: 40px;
+  @media screen and (min-width: 1440px) {
+    padding-top: 100px;
   }
+}
 
   .methods__title {
     font-weight: 700;
@@ -195,7 +203,7 @@
     border-radius: 3px 0px;
     left: 8px;
   }
-}
+
 
 // .methods-box {
 //   padding-left: 20px;
@@ -296,7 +304,7 @@
 
   @media screen and (min-width: 768px) {
     position: absolute;
-    left: 490px;
+    right: 32px;
     width: 246px;
     height: 144px;
     background-image: url(../images/bitmap/3d-modeling/tablet/3d-model.png);
@@ -306,11 +314,20 @@
       background-image: url(../images/bitmap/3d-modeling/tablet/3d-model@2x.png);
     }
   }
+  @media screen and (min-width: 830px) {
+    right: 132px;    
+  }
+  @media screen and (min-width: 1030px) {
+    right: 232px;    
+  }
+  @media screen and (min-width: 1230px) {
+    right: 332px;    
+  }
 
   @media screen and (min-width: 1440px) {
     position: absolute;
-    top: 420px;
-    left: 736px;
+    top: 440px;
+    right: 149px;
     width: 555px;
     height: 301px;
     background-image: url(../images/bitmap/3d-modeling/desktop/3d-model.png);
