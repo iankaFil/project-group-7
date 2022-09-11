@@ -311,3 +311,205 @@
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
+//*---Форма---*//
+.order-form_title {
+  font-size: 18px;
+  line-height: 1.27;
+
+  color: $accentTextColor;
+
+  margin-bottom: 8px;
+}
+
+.order-form_container {
+  position: relative;
+  width: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 44px;
+  }
+  &:nth-child(-n + 2) {
+    padding-top: 28px;
+  }
+  &:first-child {
+    margin-bottom: 16px;
+  }
+  &:last-of-type label {
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+.order-form_label {
+  position: relative;
+
+  & .order-form_name,
+  & .order-form_email {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+
+    font-size: 16px;
+    line-height: 1.25;
+
+    text-transform: capitalize;
+
+    color: $mainTextColor;
+  }
+}
+
+.order-form_name,
+.order-form_email {
+  transition: transform 250ms linear;
+}
+
+.order-form_input {
+  width: 100%;
+  height: 20px;
+
+  border: transparent;
+  border-bottom: $inputBorder;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus + .order-form_name,
+  &:focus + .order-form_email,
+  &:not(:placeholder-shown) + .order-form_name,
+  &:not(:placeholder-shown) + .order-form_email {
+    transform: translateY(-20px);
+  }
+}
+
+.order-form_container-select::before,
+.order-form_container-select::after {
+  content: '';
+  display: block;
+
+  position: absolute;
+  top: 3px;
+  right: 0;
+
+  width: 19px;
+  height: 13px;
+
+  pointer-events: none;
+}
+
+.order-form_container-select::before {
+  background-image: url(../images/icon-down.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.order-form_container-select::after {
+  display: none;
+  background-image: url(../images/icon-up.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.order-form_select {
+  display: block;
+  width: 100%;
+  height: 24px;
+
+  border: transparent;
+  border-bottom: $inputBorder;
+
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+  &:focus {
+    outline: none;
+  }
+  &:focus + .order-form_container-select::after {
+    display: block;
+  }
+  &:focus + .order-form_container-select::before {
+    display: none;
+  }
+}
+
+.order-form_message {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.order-form_textarea {
+  width: 100%;
+  height: 199px;
+  padding-top: 22px;
+  padding-left: 20px;
+
+  border: $inputBorder;
+  border-radius: 50px 0px;
+
+  resize: none;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: $inputTextColor;
+  }
+}
+
+.order-form_container-messege {
+  position: absolute;
+  bottom: 66px;
+  right: 21px;
+  width: 23px;
+  height: 20px;
+
+  cursor: pointer;
+
+  opacity: 0;
+  overflow: hidden;
+
+  & input {
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.order-form_svg {
+  position: absolute;
+  bottom: 23px;
+  right: 21px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.order-form_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: $inputTextColor;
+
+  margin-bottom: 40px;
+}
+
+.order-form_btn {
+  @include btn;
+
+  width: 100%;
+
+  padding: 16px 83.5px;
+
+  cursor: pointer;
+  border: transparent;
+
+  margin-bottom: 60px;
+}
+
+//*---Форма---*//
