@@ -86,7 +86,7 @@
 .dropmenu__content {
   display: flex;
   flex-direction: column;
-  margin-top: 4px;
+  padding-top: 4px;
   @media screen and (min-width: 1440px) {
     display: none;
     width: 131px;
