@@ -2,37 +2,68 @@
 <footer class="footer">
   <div class="footer__container container">
     <!-- Лого -->
-    <img
-      class="footer__logo"
-      src="./images/bitmap/logo/browser-png/logo_192x48.png "
-      alt="logo"
-    />
+    <a class="footer__logo" href="./index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/bitmap/logo/browser-png/logo_192x48.png     1x,
+            ./images/bitmap/logo/browser-png/logo_192x48.@2x.png 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./images/bitmap/logo/browser-png/logo_125x31.png    1x,
+            ./images/bitmap/logo/browser-png/logo_125x31@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/bitmap/logo/browser-png/logo_101x25.png    1x,
+            ./images/bitmap/logo/browser-png/logo_101x25@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/bitmap/logo/browser-png/logo_101x25.png"
+          alt="Логотип"
+        />
+      </picture>
+    </a>
     <div class="address">
       <div class="head">
-        -->
         <!-- Головна -->
         <ul class="head__list list">
           <li>
-            <a target="_blank" class="head__link link" href=""> Головна </a>
+            <a target="_blank" class="head__link link" href="./index.html">
+              Головна
+            </a>
           </li>
           <li>
-            <a target="_blank" class="head__link link" href="">
+            <a target="_blank" class="head__link link" href="./modeling.html">
               3D Моделювання</a
             >
           </li>
           <li>
-            <a target="_blank" class="head__link link" href="">
+            <a target="_blank" class="head__link link" href="./scanning.html">
               3D Сканування
             </a>
           </li>
           <li>
-            <a target="_blank" class="head__link link" href=""> 3D Друк </a>
+            <a target="_blank" class="head__link link" href="./printing.html">
+              3D Друк
+            </a>
           </li>
           <li>
-            <a target="_blank" class="head__link link" href="">Замовити </a>
+            <a target="_blank" class="head__link link" href="./take-order.html"
+              >Замовити
+            </a>
           </li>
           <li>
-            <a target="_blank" class="head__link link" href=""> Контакти </a>
+            <a target="_blank" class="head__link link" href="./contact.html">
+              Контакти
+            </a>
           </li>
         </ul>
       </div>
@@ -72,26 +103,26 @@
         </ul>
       </div>
       <!-- E-mail -->
-      <div class="contacts">
-        <p class="contacts__text">Email</p>
-        <ul class="contacts__list list">
+      <div class="cont">
+        <p class="cont__text">Email</p>
+        <ul class="cont__list list">
           <li>
             <a
-              class="contacts__link contacts__mail"
+              class="cont__link cont__mail"
               href="mailto:3dfreedom.info@gmail.com"
               >3dfreedom.info@gmail.com</a
             >
           </li>
         </ul>
-        <p class="contacts__text">Телефони</p>
-        <ul class="contacts__tel">
+        <p class="cont__text">Телефони</p>
+        <ul class="cont__tel">
           <li>
-            <a class="contacts__link" href="tel:+380936432288"
+            <a class="cont__link" href="tel:+380936432288"
               >+38 (093) 643 22 88</a
             >
           </li>
           <li>
-            <a class="contacts__link" href="tel:+380503454423"
+            <a class="cont__link" href="tel:+380503454423"
               >+38 (050) 345 44 23</a
             >
           </li>
