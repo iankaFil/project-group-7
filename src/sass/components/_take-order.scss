@@ -24,6 +24,7 @@
   border-radius: 15px;
   margin-bottom: 16px;
   background-position: center;
+  background-size: contain;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -33,7 +34,7 @@
     background-image: url(/src/images/bitmap/order/tablet/order-img.jpg);
     width: 336px;
     height: 158px;
-    background-position: center;
+
     margin-bottom: 0;
 
     @media (min-device-pixel-ratio: 2),
@@ -46,7 +47,6 @@
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img.jpg);
     min-width: 555px;
     height: 400px;
-    background-position: center;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -108,6 +108,7 @@
   border-bottom-left-radius: 72px;
   border-top-left-radius: 11px;
   border-bottom-right-radius: 11px;
+  background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -121,6 +122,7 @@
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-2.jpg);
   border-bottom-right-radius: 72px;
   border-top-left-radius: 72px;
+  background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -133,6 +135,7 @@
   height: 203px;
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-3.jpg);
   border-bottom-right-radius: 72px;
+  background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -238,6 +241,9 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 290%;
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
@@ -247,10 +253,10 @@
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img.jpg);
   background-position: top;
   border-bottom-left-radius: 72px;
-
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-size: 290%;
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
@@ -265,6 +271,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-size: 290%;
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
@@ -279,6 +286,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-size: 290%;
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
@@ -292,6 +300,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-size: 290%;
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
@@ -305,6 +314,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-size: 290%;
     background-image: url(/src/images/bitmap/order/desktop/mozjpeg/decor-img@2x.jpg);
   }
 }
