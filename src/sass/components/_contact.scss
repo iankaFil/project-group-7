@@ -154,6 +154,7 @@ padding-top: 100px;
   text-align: start;
   text-transform: uppercase;
   color: $accentTextColor;
+  margin-bottom: 8px;
 
   @include tablet {
     margin-bottom: 8px; 
@@ -377,6 +378,7 @@ text-align: end;
 }
 
 .contacts__number {
+  margin-bottom: 8px;
   @include desktop {
    margin-bottom: 18px;
   }
@@ -384,6 +386,10 @@ text-align: end;
 
 .contacts__number:nth-child(2) {
   @include desktop {
+    margin-bottom: 0;
+  }
+
+  @include mobile {
     margin-bottom: 0;
   }
 }
