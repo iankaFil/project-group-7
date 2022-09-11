@@ -1,14 +1,18 @@
 .footer {
+  @media screen and (max-width: 768px) {
+    padding: 32px 0;
+  }
   background-color: #f5f5fa;
   padding: 32px 0;
   display: block;
   text-align: center;
   line-height: 1.25;
+  padding: 40px 0;
 }
 .footer__container {
   @media screen and (min-width: 1440px) {
     display: flex;
-    justify-content: space-between;
+    padding-left: 32px;
   }
 }
 .address {
@@ -16,13 +20,13 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
-    width: 768px;
-    margin-right: 79px;
   }
 }
 .footer__logo {
   display: inline-block;
+  @media screen and (min-width: 1440px) {
+    margin-right: 277px;
+  }
 }
 .head {
   display: block;
@@ -30,16 +34,24 @@
   margin-bottom: 24px;
   @media screen and (min-width: 768px) {
     text-align: left;
+    margin-right: 103px;
   }
 }
 .cont {
   @media screen and (min-width: 768px) {
     text-align: right;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1440px) {
+    text-align: left;
   }
 }
 .soc {
   @media screen and (min-width: 768px) {
     text-align: left;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-right: 161px;
   }
 }
 .soc__list {
