@@ -4512,12 +4512,6 @@ body.modal-open {
   line-height: 1.25;
 }
 
-@media screen and (min-width: 768px) {
-  .footer__container {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 @media screen and (min-width: 1440px) {
   .footer__container {
     display: flex;
@@ -4525,12 +4519,14 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .address {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    width: 768px;
+    margin-right: 79px;
   }
 }
 
@@ -4543,19 +4539,19 @@ body.modal-open {
   margin-top: 19px;
   margin-bottom: 24px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .head {
     text-align: left;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .cont {
     text-align: right;
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .soc {
     text-align: left;
   }
@@ -4597,7 +4593,7 @@ body.modal-open {
 
 .cont__link:hover,
 .cont__link:focus {
-  color: #487996;
+  color: #008cef;
 }
 
 .cont__tel :not(:last-child) {
