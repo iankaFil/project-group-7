@@ -36,7 +36,7 @@
     text-align: left;
   }
 }
-.contacts {
+.cont {
   @media screen and (min-width: 480px) {
     text-align: right;
   }
@@ -54,7 +54,7 @@
 .soc__link:focus {
   color: #008cef;
 }
-.contacts__list {
+.cont__list {
   margin-bottom: 24px;
 }
 .head__link:hover,
@@ -67,16 +67,16 @@
 .soc__list :not(:last-child) {
   margin-bottom: 8px;
 }
-.contacts__text {
+.cont__text {
   margin-bottom: 8px;
 }
-.contacts__link {
+.cont__link {
   color: #487996;
 }
-.contacts__link:hover,
-.contacts__link:focus {
+.cont__link:hover,
+.cont__link:focus {
   color: #008cef;
 }
-.contacts__tel :not(:last-child) {
+.cont__tel :not(:last-child) {
   margin-bottom: 8px;
 }

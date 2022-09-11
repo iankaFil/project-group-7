@@ -1,34 +1,5 @@
 @charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
-
-body {
-  font-family: "Cera Pro", sans-serif;
-  color: #2b2b2b;
-}
-
-.container {
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-  }
-}
-
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Bold.eot");
@@ -36,7 +7,6 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Light.eot");
@@ -44,7 +14,6 @@ body {
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Regular.eot");
@@ -52,7 +21,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Cera Pro";
   src: url("../fonts/CeraPro-Medium.eot");
@@ -60,7 +28,6 @@ body {
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Caviar Dreams";
   src: url("../fonts/CaviarDreams.eot");
@@ -68,7 +35,6 @@ body {
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Caviar Dreams";
   src: url("../fonts/Caviar_Dreams_Bold.eot");
@@ -76,7 +42,6 @@ body {
   font-weight: 700;
   font-style: normal;
 }
-
 ul,
 h1,
 h2,
@@ -209,7 +174,12 @@ body.modal-open {
 .hero__list {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
+}
+@media screen and (min-width: 350px) {
+  .hero__list {
+    gap: 15px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero__list {
@@ -318,11 +288,6 @@ body.modal-open {
     line-height: 1.25;
     margin-bottom: 60px;
   }
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 @media screen and (min-width: 768px) {
@@ -537,42 +502,80 @@ ul {
     background-color: rgb(255, 255, 255);
   }
 }
-.popup:not(:target) {
+.overlay:not(:target) {
   display: none;
 }
 
-.popup:target {
+.overlay:target {
   display: block;
   position: fixed;
   top: 0;
-  left: 50%;
-  bottom: 0;
-  right: 0;
-  background: rgba(179, 117, 117, 0.9);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(43, 43, 43, 0.8);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 
-.full-img {
+.overlay__img-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: block;
 }
 
 .close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   font-size: 30px;
   text-decoration: none;
-  color: red;
+}
+
+.arrow-wrap {
+  position: absolute;
+  display: flex;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .arrow-wrap {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.arrow-right {
+  top: 50%;
+  right: -73px;
+  fill: currentColor;
+}
+
+.arrow-left {
+  top: 50%;
+  left: -73px;
+  fill: currentColor;
+}
+
+.overlay__icon {
+  fill: #ffffff;
+}
+.arrow-scroll:hover .overlay__icon {
+  fill: #487996;
 }
 
 .header-wrap {
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
-  padding: 20px;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: 100%;
 }
 @media screen and (min-width: 1440px) {
   .header-wrap {
@@ -588,7 +591,7 @@ ul {
 }
 
 .logo {
-  width: 101px;
+  max-width: 101px;
   height: 25px;
 }
 @media screen and (min-width: 768px) {
@@ -660,16 +663,16 @@ ul {
   margin-bottom: 4px;
 }
 
-.dropmenu {
-  display: inline-block;
-  flex-direction: column;
-}
 @media screen and (min-width: 1440px) {
   .dropmenu {
     position: relative;
   }
 }
 
+.dropmenu__content {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 1440px) {
   .dropmenu__content {
     display: none;
@@ -685,6 +688,7 @@ ul {
   font-size: 24px;
   line-height: 1.25;
   color: #487996;
+  text-transform: none;
 }
 @media screen and (min-width: 1440px) {
   .dropmenu__content .header-dropmenu__link {
@@ -692,6 +696,10 @@ ul {
     text-decoration: none;
     display: block;
   }
+}
+
+.header-dropmenu__link:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 .dropmenu:hover .dropmenu__content {
@@ -703,6 +711,11 @@ ul {
   transition-duration: 500ms;
   transition-timing-function: linear;
   transition-delay: 0;
+}
+@media screen and (max-width: 1439px) {
+  .dropbtn {
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (min-width: 1439px) {
@@ -800,6 +813,11 @@ ul {
   fill: currentColor;
   padding: 0;
 }
+@media screen and (min-width: 1440px) {
+  .menu-button {
+    display: none;
+  }
+}
 
 .menu-button__close {
   display: none;
@@ -810,6 +828,19 @@ ul {
 }
 .menu-button.is-open .menu-button__menu {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .gallery__container {
+    padding-left: 149px;
+    padding-right: 149px;
+  }
 }
 
 .gallery__title {
@@ -981,6 +1012,13 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #2b2b2b;
+}
+
+.take-order-contacts__link {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.1;
@@ -1232,7 +1270,7 @@ ul {
 }
 
 @media screen and (min-width: 480px) {
-  .contacts {
+  .cont {
     text-align: right;
   }
 }
@@ -1252,7 +1290,7 @@ ul {
   color: #008cef;
 }
 
-.contacts__list {
+.cont__list {
   margin-bottom: 24px;
 }
 
@@ -1269,19 +1307,19 @@ ul {
   margin-bottom: 8px;
 }
 
-.contacts__text {
+.cont__text {
   margin-bottom: 8px;
 }
 
-.contacts__link {
+.cont__link {
   color: #487996;
 }
 
-.contacts__link:hover,
-.contacts__link:focus {
+.cont__link:hover,
+.cont__link:focus {
   color: #008cef;
 }
 
-.contacts__tel :not(:last-child) {
+.cont__tel :not(:last-child) {
   margin-bottom: 8px;
 }/*# sourceMappingURL=index.css.map */
