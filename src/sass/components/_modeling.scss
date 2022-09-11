@@ -8,6 +8,13 @@
     padding-top: 100px;
     padding-bottom: 80px;
   }
+
+  .container {
+    @media screen and (min-width: 1440px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
 }
 
 .work-examples__title {
@@ -15,6 +22,11 @@
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     max-width: 439px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    max-width: 652px;
+    margin-left: 117px;
   }
 }
 
@@ -52,6 +64,7 @@
   }
 
   @media screen and (min-width: 1440px) {
+    width: 1377px;
     margin-top: 40px;
     margin-bottom: 80px;
   }
