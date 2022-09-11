@@ -1,0 +1,86 @@
+<section class="order-form">
+  <div class="container">
+    <h2 class="order-form_title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
+    <form>
+      <div class="order-form_container">
+        <label class="order-form_label">
+          <input
+            placeholder=" "
+            type="text"
+            name="username"
+            class="order-form_input"
+          />
+          <span class="order-form_name">Ім'я</span>
+        </label>
+      </div>
+
+      <div class="order-form_container">
+        <label class="order-form_label">
+          <input
+            placeholder=" "
+            type="email"
+            name="email"
+            class="order-form_input"
+          />
+          <span class="order-form_email">Email</span>
+        </label>
+      </div>
+
+      <div class="order-form_container">
+        <select name="types_of_plastic" class="order-form_select">
+          <option disabled selected>Види пластика</option>
+          <option value="h">Жосткий</option>
+          <option value="s">Середньо-жосткий</option>
+          <option value="m">Тонкий</option>
+          <option value="help">Труднощі у виборі - ми допоможемо</option>
+        </select>
+        <div class="order-form_container-select"></div>
+      </div>
+
+      <div class="order-form_container">
+        <select name="print_quality" class="order-form_select">
+          <option disabled selected>Якість дуруку</option>
+          <option value="300">300 мікрон</option>
+          <option value="200">200 мікрон</option>
+          <option value="100">100 мікрон</option>
+          <option value="help">Труднощі у виборі - ми допоможемо</option>
+        </select>
+        <div class="order-form_container-select"></div>
+      </div>
+
+      <div class="order-form_container">
+        <select name="color" class="order-form_select">
+          <option disabled selected>Колір</option>
+          <option value="gray">Сірий</option>
+          <option value="buryi">Бурий</option>
+          <option value="malynovyy">Малиновий</option>
+          <option value="help">Труднощі у виборі - ми допоможемо</option>
+        </select>
+        <div class="order-form_container-select"></div>
+      </div>
+
+      <div class="order-form_container">
+        <label class="order-form_label">
+          <span class="order-form_message">Повідомлення</span>
+          <textarea
+            class="order-form_textarea"
+            name="message"
+            rows="5"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+          <svg class="order-form_svg" width="23" height="20">
+            <use href="./images/sprite.svg#icon-input-file"></use>
+          </svg>
+        </label>
+        <div class="order-form_container-messege">
+          <input type="file" name="message_img" />
+        </div>
+        <p class="order-form_text">
+          *Прикріпіть зображення/креслення/STL/Obj/CAD-модель
+        </p>
+      </div>
+    </form>
+
+    <button type="submit" class="order-form_btn">Відправити</button>
+  </div>
+</section>
