@@ -8,12 +8,13 @@
 .footer__container {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
   @media screen and (min-width: 1440px) {
     display: flex;
+    justify-content: space-between;
   }
 }
-
 .address {
   @media screen and (min-width: 480px) {
     display: flex;
@@ -23,8 +24,6 @@
   }
 }
 .footer__logo {
-  width: 192px;
-  height: 48px;
   display: inline-block;
 }
 .head {
@@ -35,7 +34,7 @@
     text-align: left;
   }
 }
-.contacts {
+.cont {
   @media screen and (min-width: 480px) {
     text-align: right;
   }
@@ -51,14 +50,14 @@
 }
 .soc__link:hover,
 .soc__link:focus {
-  color: #008cef;
+  color: #487996;
 }
-.contacts__list {
+.cont__list {
   margin-bottom: 24px;
 }
 .head__link:hover,
 .head__link:focus {
-  color: #008cef;
+  color: #487996;
 }
 .head__list :not(:last-child) {
   margin-bottom: 8px;
@@ -66,16 +65,16 @@
 .soc__list :not(:last-child) {
   margin-bottom: 8px;
 }
-.contacts__text {
+.cont__text {
   margin-bottom: 8px;
 }
-.contacts__link {
+.cont__link {
   color: #487996;
 }
-.contacts__link:hover,
-.contacts__link:focus {
-  color: #008cef;
+.cont__link:hover,
+.cont__link:focus {
+  color: #487996;
 }
-.contacts__tel :not(:last-child) {
+.cont__tel :not(:last-child) {
   margin-bottom: 8px;
 }
