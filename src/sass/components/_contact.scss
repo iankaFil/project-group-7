@@ -230,20 +230,17 @@
     width: 400px;
     text-align: initial;
   }
-  width: 400px;
-  text-align: initial;
+
+  @include desktop {
+    width: 515px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11em;
+
+    color: $inputTextColor;
+  }
 }
-
-@include desktop {
-  width: 515px;
-  height: 20px;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.11em;
-
-  color: $inputTextColor;
-}
-
 .contacts__form-flex {
   @include tablet {
     display: flex;
