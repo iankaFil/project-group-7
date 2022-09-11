@@ -14,7 +14,7 @@
 .printing-container {
   padding-left: 0;
   padding-right: 0;
-  
+
 }
 .printing__title {
   font-family: 'Cera Pro';
@@ -42,10 +42,7 @@
     margin-right: 667px;
   }
 }
-.our-service {
-  padding-top: 100px;
-  padding-bottom: 80px;
-}
+
 
 .our-processes {
   display: flex;
@@ -54,6 +51,7 @@
 
   @include tablet {
     gap: 60px;
+    width: 768px;
   }
 
   @include desktop {
@@ -63,19 +61,30 @@
 }
 
 .process-item {
+  width: 704px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-
+  align-items: center;
   @include tablet {
     flex-direction: row;
-    gap: 32px;
+    
   }
 
   @include desktop {
     gap: 86px;
   }
 }
+.process-thumb{width: calc((100% - 32px) /2);}
+.process-thumb > img{ 
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  
+}
+.thumb-img{border-radius: 50px 0px;box-shadow: (20px 20px 80px rgba(0, 0, 0, 0.15));}
+
 
 .process-description {
   color: $mainTextColor;
