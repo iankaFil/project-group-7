@@ -92,7 +92,13 @@
 }
 .scanhero_photo {
   display: flex;
-  justify-content: center;
+    justify-content: center;
+  
+    @media screen and (max-width: 767px) {
+      width: 280px;
+      margin: auto;
+    }
+
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
     right: 0;
