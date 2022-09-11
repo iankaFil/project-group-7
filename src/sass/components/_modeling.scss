@@ -46,9 +46,9 @@
 .work-examples__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
+ margin: auto;
 
-  @media screen and (min-width: 470px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     max-width: 280px;
   }
 
@@ -104,6 +104,17 @@
   @include btn;
   display: inline-block;
   max-width: 280px;
+}
+
+.modeling-hero {
+  @media screen and (min-width: 1440px) {
+    padding-top: 100px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 34px;
+  }
+
 }
 
 .modeling-hero__title {
@@ -284,6 +295,7 @@
 }
 
 .methods-wrap {
+  position: relative;
   @media screen and(min-width:768px) {
     display: flex;
   }
@@ -302,9 +314,10 @@
     background-image: url(../images/bitmap/3d-modeling/mobile/3d-model@2x.png);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
-    right: 32px;
+    top: 0%;
+    right: 0;
     width: 246px;
     height: 144px;
     background-image: url(../images/bitmap/3d-modeling/tablet/3d-model.png);
@@ -314,20 +327,11 @@
       background-image: url(../images/bitmap/3d-modeling/tablet/3d-model@2x.png);
     }
   }
-  @media screen and (min-width: 830px) {
-    right: 132px;    
-  }
-  @media screen and (min-width: 1030px) {
-    right: 232px;    
-  }
-  @media screen and (min-width: 1230px) {
-    right: 332px;    
-  }
-
+  
   @media screen and (min-width: 1440px) {
     position: absolute;
-    top: 440px;
-    right: 149px;
+    bottom: 0;
+    right: 0;
     width: 555px;
     height: 301px;
     background-image: url(../images/bitmap/3d-modeling/desktop/3d-model.png);
