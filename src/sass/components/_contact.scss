@@ -1,25 +1,24 @@
-.container {
-  padding: 0 20px;
-  margin: 0 auto;
+// .container {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
 
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 1440px;
-  }
-}
+//   @media screen and (min-width: 1440px) {
+//     width: 1440px;
+//   }
+// }
 
 @include tablet {
   .contacts__flex-box {
     display: flex;
-
   }
 }
 
@@ -79,18 +78,17 @@
 
   @include tablet {
     margin-bottom: 8px;
-    
   }
 }
 
-.contacts__form-title--text{
+.contacts__form-title--text {
   text-transform: none;
 }
 
 .contacts__form-title--position {
-@include tablet {
-text-align: end;
-}
+  @include tablet {
+    text-align: end;
+  }
 }
 
 .contacts__form-lable {
@@ -103,9 +101,9 @@ text-align: end;
   color: $mainTextColor;
   margin-bottom: 8px;
 
-    @include tablet {
-        width: 400px;
-      }
+  @include tablet {
+    width: 400px;
+  }
 }
 
 .contacts__form-input {
@@ -154,16 +152,16 @@ text-align: end;
   color: #cdcdcd;
 
   @include tablet {
-      width: 400px;
-      text-align: initial;
-    }
+    width: 400px;
+    text-align: initial;
+  }
 }
 
 .contacts__form-flex {
   @include tablet {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -179,35 +177,34 @@ text-align: end;
   }
 }
 
-  @include tablet {
-    .number__tablet{
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-      width: 184px;
-    }
-
-    .mail__tablet {
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-      margin-right: 82px;
-    }
-
-    .time__tablet {
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-      margin-left: auto;
-    }
+@include tablet {
+  .number__tablet {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 184px;
   }
 
+  .mail__tablet {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-right: 82px;
+  }
+
+  .time__tablet {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: auto;
+  }
+}
 
 .contacts__work-time {
   margin-top: 8px;
 }
 
-.contacts__work-time:nth-child(1){
+.contacts__work-time:nth-child(1) {
   margin: 0;
 }
 
@@ -235,12 +232,11 @@ text-align: end;
 }
 
 .contacts__button {
-  @include btn ;
+  @include btn;
   margin-top: 40px;
   width: 100%;
   @include tablet {
-  width: 177px;
-  margin-right: 174px;
+    width: 177px;
+    margin-right: 174px;
   }
-  
 }

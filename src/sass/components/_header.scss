@@ -2,8 +2,10 @@
   position: relative;
   display: flex;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px 20px 40px;
+  @media screen and (min-width: 768px) {
+    padding: 20px 32px 40px;
+  }
 }
 .logo-link {
   margin-right: auto;
