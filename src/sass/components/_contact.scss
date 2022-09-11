@@ -33,6 +33,13 @@
     height: 261px;
     margin-right: 24px;
   }
+
+  @include desktop {
+    width: 555px;
+    height: 315px;
+    margin-left: 149px;
+
+  }
 }
 
 .contacts__title {
@@ -45,14 +52,28 @@
   font-size: 24px;
   line-height: 1.25em;
   text-align: left;
+
+  @include desktop {
+    margin-left: 149px;
+    width: 624px;
+      height: 60px;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+  color: $accentTextColor;  }
 }
 
 .contact__list {
   padding-bottom: 40px;
+
 }
 
 .contacts__item {
   margin-top: 16px;
+
+  @include desktop {
+    gap: 24px;
+  }
 }
 
 .contacts__text {
@@ -61,11 +82,43 @@
   font-size: 16px;
   line-height: 1.25em;
   color: $mainTextColor;
+  text-align: start;
 
   @include tablet {
     width: 335px;
   }
+
+  @include desktop {
+    width: 515px;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.28em;
+    
+      color:$mainTextColor;
+  }
+
+  
+  
 }
+
+@include desktop {
+.desktop__flex {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 80px;
+    margin-right: 117px;
+  }
+}
+
+@include desktop {
+.button__position {
+display: flex;
+flex-direction: column;
+padding-top: 100px;
+}
+}
+
+
 
 .contacts__form-title {
   // width: 280px;
@@ -78,8 +131,17 @@
   color: $accentTextColor;
 
   @include tablet {
-    margin-bottom: 8px;
+    margin-bottom: 8px; 
+  }
+
+  @include desktop {
+    width: 515px;
+      height: 45px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.25em;
     
+      color:$accentTextColor;
   }
 }
 
@@ -90,6 +152,10 @@
 .contacts__form-title--position {
 @include tablet {
 text-align: end;
+}
+
+@include desktop {
+  text-align: left;
 }
 }
 
@@ -105,6 +171,10 @@ text-align: end;
 
     @include tablet {
         width: 400px;
+      }
+
+      @include desktop {
+        width: 555px;
       }
 }
 
@@ -122,6 +192,10 @@ text-align: end;
 
   @include tablet {
     width: 400px;
+  }
+
+  @include desktop {
+    width: 555px;
   }
 }
 
@@ -143,6 +217,12 @@ text-align: end;
     width: 100%;
     max-width: 400px;
   }
+
+  @include desktop {
+    max-width: 100%;
+  width: 555px;
+  height: 247px;
+  }
 }
 
 .contacts__form-text {
@@ -151,19 +231,34 @@ text-align: end;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25em;
-  color: #cdcdcd;
+  color: $inputTextColor;
 
   @include tablet {
       width: 400px;
       text-align: initial;
     }
+
+    @include desktop {
+    width: 515px;
+      height: 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.11em;
+    
+      color: $inputTextColor;
+    }
 }
 
 .contacts__form-flex {
   @include tablet {
+    padding-top: 40px;
       display: flex;
       flex-direction: column;
       align-items: center;
+  }
+
+  @include desktop {
+    align-items: flex-start;
   }
 }
 
@@ -176,6 +271,15 @@ text-align: end;
 
   @include tablet {
     flex-direction: row;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    width: 587px;
+    padding-top: 0;
+    padding-top: 100px;
+    gap: 68px;
   }
 }
 
@@ -201,11 +305,17 @@ text-align: end;
       margin-left: auto;
     }
   }
+  
 
+  @include desktop {
+    .time__tablet {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin-left: 0;
+      }
+  }
 
-.contacts__work-time {
-  margin-top: 8px;
-}
 
 .contacts__work-time:nth-child(1){
   margin: 0;
@@ -226,12 +336,34 @@ text-align: end;
   @include tablet {
     width: 184px;
   }
+
+  @include desktop {
+    width: 390px;
+      height: 20px;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.11em;
+      text-transform: capitalize;
+    
+      color: #2B2B2B;
+  }
 }
 
 .contacts__work-time {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+
   @include tablet {
     text-align: end;
+
   }
+
+    @include desktop {
+      text-align: left;
+      margin-top: 20px;
+      flex-direction: row;
+    }
 }
 
 .contacts__button {
@@ -243,4 +375,26 @@ text-align: end;
   margin-right: 174px;
   }
   
+  @include desktop {
+    width: 177px;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 24px;
+  }
 }
+
+@include desktop {
+.smile {
+    display: none;
+  }
+}
+
+.contacts__list--flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__item--position {
+
+}
+
