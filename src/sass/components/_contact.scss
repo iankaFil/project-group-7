@@ -115,14 +115,10 @@
 }
 
 .contacts__form-title {
-  // width: 280px;
-  height: 23px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.28em;
+  @include font(700, 18px, 1.28, $accentTextColor);
+
   text-align: start;
   text-transform: uppercase;
-  color: $accentTextColor;
   margin-bottom: 8px;
 
   @include tablet {
@@ -131,13 +127,7 @@
 
   @include desktop {
     margin-bottom: 18px;
-    width: 515px;
-    height: 45px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.25em;
-
-    color: $accentTextColor;
+    @include font(700, 36px, 1.25, $accentTextColor);
   }
 }
 
@@ -146,7 +136,7 @@
 }
 
 .contacts__form-title--position {
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 767px) and (max-width: 1439px) {
     text-align: end;
   }
 
@@ -444,18 +434,3 @@
     margin-bottom: 56px;
   }
 }
-// .smile-png {
-
-//   @media screen and (min-width: 480px) {
-//     bottom: 52.5%;
-//     right: 48%;
-//   }
-//   @media screen and (min-width: 768px) {
-//     right: 21%;
-//     bottom: 64%;
-//   }
-
-//   @media screen and (min-width: 1440px) {
-//     margin-top: 56px;
-//   }
-// }
