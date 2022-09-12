@@ -71,6 +71,7 @@
   }
   @include desktop {
     margin-top: 0;
+    gap: 24px;
   }
 }
 .hero-take-order__text-item {
@@ -111,8 +112,8 @@
   background-image: url(/src/images/bitmap/order/desktop/mozjpeg/order-img-1.jpg);
   border-top-right-radius: 72px;
   border-bottom-left-radius: 72px;
-  border-top-left-radius: 11px;
-  border-bottom-right-radius: 11px;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
   background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
