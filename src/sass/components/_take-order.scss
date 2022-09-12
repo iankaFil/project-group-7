@@ -536,7 +536,7 @@
 
 .take-order__form {
   @media screen and (max-width: 1439px) {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto;
   }
 }
