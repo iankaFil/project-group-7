@@ -417,12 +417,20 @@
 
 .smile-png {
   position: absolute;
-  @media screen and (max-width: 1439px) {
+  right: 30%;
+  bottom: 46.5%;
+  @media screen and (min-width: 480px) {
+    bottom: 52.5%;
+    right: 48%;
+  }
+  @media screen and (min-width: 768px) {
     right: 21%;
-    bottom: 78%;
+    bottom: 64%;
   }
 
   @media screen and (min-width: 1440px) {
     display: block;
+    right: 45%;
+    bottom: 43%
   }
 }
