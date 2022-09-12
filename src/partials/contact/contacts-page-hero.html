@@ -27,39 +27,39 @@
             </p>
           </li>
           <li class="contacts__item">
-            <p class="contacts__textps">Приємного перегляду!</p>
+            <div class="colobok-wrap">
+              <p class="contacts__textos colobok-parent">
+                Приємного перегляду!
+              </p>
+              <picture class="smile-png">
+                <source
+                  srcset="
+                    ./images/bitmap/contacts/desktop/emoji.png    1x,
+                    ./images/bitmap/contacts/desktop/emoji@2x.png 2x
+                  "
+                  media="(min-width:1440px)"
+                />
+                <source
+                  srcset="
+                    ./images/bitmap/contacts/tablet/emoji.png    1x,
+                    ./images/bitmap/contacts/tablet/emoji@2x.png 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/bitmap/contacts/mobile/emoji.png    1x,
+                    ./images/bitmap/contacts/mobile/emoji@2x.png 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/bitmap/contacts/desktop/emoji.png"
+                  alt="смайлик"
+                />
+              </picture>
+            </div>
           </li>
-          <li>
-            <picture class="smile-png">
-              <source
-                srcset="
-                  ./images/bitmap/contacts/desktop/emoji.png    1x,
-                  ./images/bitmap/contacts/desktop/emoji@2x.png 2x
-                "
-                media="(min-width:1440px)"
-              />
-              <source
-                srcset="
-                  ./images/bitmap/contacts/tablet/emoji.png    1x,
-                  ./images/bitmap/contacts/tablet/emoji@2x.png 2x
-                "
-                media="(min-width:768px)"
-              />
-              <source
-                srcset="
-                  ./images/bitmap/contacts/mobile/emoji.png    1x,
-                  ./images/bitmap/contacts/mobile/emoji@2x.png 2x
-                "
-                media="(max-width:767px)"
-              />
-              <img
-                src="./images/bitmap/contacts/desktop/emoji.png"
-                alt="смайлик"
-              />
-            </picture>
-  
-          </li>
-
         </ul>
       </div>
     </div>
@@ -73,8 +73,12 @@
               class="contacts__form-input"
               type="text"
               id="name"
-              placeholder="Олексій"/>
-            <label class="contacts__form-lable visually-hidden" for="mail"></label>
+              placeholder="Олексій"
+            />
+            <label
+              class="contacts__form-lable visually-hidden"
+              for="mail"
+            ></label>
             <input
               class="contacts__form-input"
               type="text"
@@ -91,7 +95,9 @@
               rows="10"
               placeholder="Залишіть своє повідомлення"
             ></textarea>
-            <svg class="icon-input-file" width="22" height="20"><use href="./images/sprite.svg#icon-input-file"></use></svg>
+            <svg class="icon-input-file" width="22" height="20">
+              <use href="./images/sprite.svg#icon-input-file"></use>
+            </svg>
             <p class="contacts__form-text">
               *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
             </p>

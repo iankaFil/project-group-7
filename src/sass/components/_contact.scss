@@ -5,9 +5,9 @@
   @include tablet {
     padding-top: 34px;
   }
-   @include desktop {
+  @include desktop {
     padding-top: 100px;
-   }
+  }
 }
 
 @include tablet {
@@ -77,15 +77,12 @@
 
 .contacts__textos {
   max-width: 400px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25em;
-  color: $mainTextColor;
+  @include font(400, 16px, 1.25, $mainTextColor);
   text-align: start;
 
-  @include tablet {
-    width: 335px;
-  }
+  // @include tablet {
+  //   text-align: start;
+  // }
 
   @include desktop {
     max-width: 100%;
@@ -252,13 +249,13 @@
   bottom: 41px;
   left: 235px;
   @media screen and (min-width: 480px) {
-    left: 390px;    
+    left: 390px;
   }
   @include tablet {
-    left: 165px;  
+    left: 165px;
   }
   @include desktop {
-      left: 475px;
+    left: 475px;
   }
 }
 
@@ -398,12 +395,14 @@
   }
 }
 .contacts__button {
+  display: flex;
   @include btn;
   margin-top: 40px;
   width: 100%;
   @include tablet {
     width: 177px;
     margin-right: 174px;
+    margin-left: auto;
   }
 
   @include desktop {
@@ -425,22 +424,35 @@
   flex-direction: column;
 }
 
-.smile-png {
-  position: absolute;
-  right: 30%;
-  bottom: 46.5%;
-  @media screen and (min-width: 480px) {
-    bottom: 52.5%;
-    right: 48%;
-  }
-  @media screen and (min-width: 768px) {
-    right: 21%;
-    bottom: 64%;
-  }
-
-  @media screen and (min-width: 1440px) {
+.colobok-wrap {
+  display: flex;
+  @include desktop {
     display: block;
-    right: 45%;
-    bottom: 43%
   }
 }
+.colobok-parent {
+  @include mobile {
+    margin-right: 2px;
+  }
+  @include tablet {
+    margin-right: 8px;
+  }
+  @include desktop {
+    margin-bottom: 56px;
+  }
+}
+// .smile-png {
+
+//   @media screen and (min-width: 480px) {
+//     bottom: 52.5%;
+//     right: 48%;
+//   }
+//   @media screen and (min-width: 768px) {
+//     right: 21%;
+//     bottom: 64%;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     margin-top: 56px;
+//   }
+// }

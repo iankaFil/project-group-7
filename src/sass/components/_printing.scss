@@ -9,8 +9,8 @@
     // // padding-top: 0;
     margin-bottom: 0;
     .container {
-      padding-left: 0;
-      padding-right: 0;
+      padding-left: 32px;
+      padding-right: 32px;
     }
   }
 }
@@ -286,5 +286,10 @@
     margin-left: 12px;
     width: 280px;
     height: 50px;
+  }
+}
+.process-card {
+  @include desktop {
+    margin-right: 87px;
   }
 }
