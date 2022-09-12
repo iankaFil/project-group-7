@@ -1,6 +1,14 @@
-// .contacts-container {
-//   padding-left: 0;
-// }
+.contacts {
+  @media screen and (max-width: 767px) {
+    padding-top: 0;
+  }
+  @include tablet {
+    padding-top: 34px;
+  }
+   @include desktop {
+    padding-top: 100px;
+   }
+}
 
 @include tablet {
   .contacts__flex-box {
