@@ -249,9 +249,19 @@
 }
 .icon-input-file {
   position: relative;
-  right: -90%;
-  bottom: 6%;
+  bottom: 41px;
+  left: 235px;
+  @media screen and (min-width: 480px) {
+    left: 390px;    
+  }
+  @include tablet {
+    left: 165px;  
+  }
+  @include desktop {
+      left: 475px;
+  }
 }
+
 .contacts__form-flex {
   @include tablet {
     display: flex;
