@@ -1,19 +1,5 @@
-// .container {
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   margin: 0 auto;
-
-//   @media screen and (min-width: 480px) {
-//     width: 480px;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//   }
-
-//   @media screen and (min-width: 1440px) {
-//     width: 1440px;
-//   }
+// .contacts-container {
+//   padding-left: 0;
 // }
 
 @include tablet {
@@ -36,29 +22,15 @@
   @include desktop {
     width: 555px;
     height: 315px;
-    margin-left: 149px;
   }
 }
 
 .contacts__title {
-  margin-top: 40px;
-  margin-right: 0;
+  @include font(700, 24px, 1.25, $accentTextColor);
   margin-bottom: 16px;
-  color: $accentTextColor;
-  width: 280px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.25em;
-  text-align: left;
 
   @include desktop {
-    margin-left: 149px;
-    width: 624px;
-    height: 60px;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 60px;
-    color: $accentTextColor;
+    @include font(700, 48px, 1.25, $accentTextColor);
   }
 }
 
@@ -126,8 +98,6 @@
     flex-direction: row-reverse;
     padding-bottom: 80px;
     // margin-right: 117px;
-    justify-content: flex-end;
-    margin-left: 149px;
   }
 }
 
@@ -183,11 +153,8 @@
 .contacts__form-lable {
   width: 280px;
   height: 20px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25em;
+  @include font(400, 14px, 1.25, $mainTextColor);
   text-align: justify;
-  color: $mainTextColor;
   margin-bottom: 8px;
 
   @include tablet {
@@ -218,21 +185,26 @@
   @include desktop {
     width: 555px;
   }
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+.contacts__form-input::placeholder {
+  @include font(400, 18px, 1.1, $mainTextColor);
+
+  text-transform: capitalize;
 }
 
 .contacts__form-textarea {
   width: 100%;
+
   height: 199px;
   border: $inputBorder;
   border-radius: 50px 0px;
   padding: 22px;
-
+  @include font(400, 16px, 1.25, $mainTextColor);
   font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25em;
-  color: #cdcdcd;
 
   @include tablet {
     width: 100%;
@@ -244,15 +216,19 @@
     width: 555px;
     height: 247px;
   }
+  &:hover,
+  &:focus {
+    outline: none;
+  }
 }
-
+.contacts__form-textarea::placeholder {
+  @include font(400, 18px, 1.1, $inputTextColor);
+}
 .contacts__form-text {
+  position: relative;
   width: 280px;
   height: 60px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25em;
-  color: $inputTextColor;
+  @include font(400, 16px, 1.25, $inputTextColor);
 
   @include tablet {
     width: 400px;
@@ -262,12 +238,13 @@
   @include desktop {
     width: 515px;
     height: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.11em;
-
-    color: $inputTextColor;
+    @include font(400, 16px, 1.11, $inputTextColor);
   }
+}
+.icon-input-file {
+  position: relative;
+  right: -90%;
+  bottom: 6%;
 }
 .contacts__form-flex {
   @include tablet {
@@ -297,7 +274,6 @@
   @include desktop {
     display: flex;
     flex-direction: column;
-    width: 587px;
     padding-top: 0;
     padding-top: 100px;
     gap: 68px;
@@ -347,7 +323,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25em;
+  line-height: 1.25;
   text-transform: capitalize;
   color: $mainTextColor;
 
@@ -358,9 +334,8 @@
   @include desktop {
     width: 390px;
     height: 20px;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.11em;
+    line-height: 1.11;
     text-transform: capitalize;
 
     color: #2b2b2b;
@@ -399,7 +374,13 @@
     flex-direction: row;
   }
 }
-
+.contacts__lable-textarea {
+  @include font(400, 18px, 1.1, $mainTextColor);
+  margin-bottom: 4px;
+  @include tablet {
+    text-align: justify;
+  }
+}
 .contacts__button {
   @include btn;
   margin-top: 40px;
@@ -429,10 +410,13 @@
 }
 
 .smile-png {
-  @include desktop {
-    display: block;
-  }
+  position: absolute;
   @media screen and (max-width: 1439px) {
-    display: none;
+    right: 21%;
+    bottom: 78%;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: block;
   }
 }
