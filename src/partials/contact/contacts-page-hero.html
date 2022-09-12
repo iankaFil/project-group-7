@@ -25,8 +25,10 @@
       </li>
 
       <picture class="smile-png">
-        <source srcset="./images/bitmap/contacts/desktop/emoji.png 1x, ./images/bitmap/contacts/desktop/emoji@2x.png 2x"
-          media="1440px">
+        <source srcset="
+            ./images/bitmap/contacts/desktop/emoji.png    1x,
+            ./images/bitmap/contacts/desktop/emoji@2x.png 2x
+          " media="1440px" />
         <img src="./images/bitmap/contacts/desktop/emoji.png" alt="смайлик" />
       </picture>
     </ul>
@@ -38,13 +40,15 @@
         <div class="contacts__form-flex">
           <h2 class="contacts__form-title">ЗВ’ЯЖІТЬСЯ З НАМИ</h2>
           <label class="contacts__form-lable" for="name">Ім’я</label>
-          <input class="contacts__form-input" type="text" id="name" placeholder="Олексій">
+          <input class="contacts__form-input" type="text" id="name" placeholder="Олексій" />
           <label class="contacts__form-lable" for="mail"></label>
-          <input class="contacts__form-input" type="text" id="mail" placeholder="Email">
+          <input class="contacts__form-input" type="text" id="mail" placeholder="Email" />
           <label class="contacts__form-lable" for="coment">Повідомлення</label>
-          <textarea class="contacts__form-textarea" name="" id="coment" rows="10"
+          <textarea class="contacts__form-textarea" name="text" id="coment" rows="10"
             placeholder="Залишіть своє повідомлення"></textarea>
-          <p class="contacts__form-text">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+          <p class="contacts__form-text">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
         </div>
         <button class="contacts__button" type="submit">ВІДПРАВИТИ</button>
       </div>
@@ -64,9 +68,11 @@
         <div class="time__tablet">
           <h2 class="contacts__form-title contacts__form-title--position">Робочий час</h2>
           <ul class="contacts__list--flex">
-            <li class="contacts__work-time">Пн-пт:<span class="contacts__item--position">з 8:00 до 19:00</span>
+            <li class="contacts__work-time">
+              Пн-пт:<span class="contacts__item--position">з 8:00 до 19:00</span>
             </li>
-            <li class="contacts__work-time">Сб, Нд:<span class="contacts__item--position">з 10:00 до 17:00</span>
+            <li class="contacts__work-time">
+              Сб, Нд:<span class="contacts__item--position">з 10:00 до 17:00</span>
             </li>
           </ul>
         </div>
