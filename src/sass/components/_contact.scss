@@ -249,9 +249,19 @@
 }
 .icon-input-file {
   position: relative;
-  right: -90%;
-  bottom: 6%;
+  bottom: 41px;
+  left: 235px;
+  @media screen and (min-width: 480px) {
+    left: 390px;    
+  }
+  @include tablet {
+    left: 165px;  
+  }
+  @include desktop {
+      left: 475px;
+  }
 }
+
 .contacts__form-flex {
   @include tablet {
     display: flex;
@@ -417,12 +427,20 @@
 
 .smile-png {
   position: absolute;
-  @media screen and (max-width: 1439px) {
+  right: 30%;
+  bottom: 46.5%;
+  @media screen and (min-width: 480px) {
+    bottom: 52.5%;
+    right: 48%;
+  }
+  @media screen and (min-width: 768px) {
     right: 21%;
-    bottom: 78%;
+    bottom: 64%;
   }
 
   @media screen and (min-width: 1440px) {
     display: block;
+    right: 45%;
+    bottom: 43%
   }
 }
