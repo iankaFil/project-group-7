@@ -8,6 +8,10 @@
   text-align: center;
   line-height: 1.25;
   padding: 40px 0;
+
+  address {
+    font-style: normal;
+  }
 }
 .footer__container {
   @media screen and (min-width: 1440px) {
