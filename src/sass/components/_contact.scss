@@ -198,7 +198,7 @@
 
 .contacts__form-textarea {
   width: 100%;
-
+  resize: none;
   height: 199px;
   border: $inputBorder;
   border-radius: 50px 0px;

@@ -86,7 +86,7 @@
   height: 16px;
 
   position: relative;
-  bottom:13px;
+  bottom: 13px;
   left: 103px;
 
   @media screen and (max-width: 767px) {
@@ -94,9 +94,9 @@
   }
   @media screen and (min-width: 1440px) {
     width: 32px;
-    height: 32px;    
+    height: 32px;
 
-    top: -29px;
+    top: 15px;
     left: 83px;
   }
 }
@@ -108,6 +108,6 @@
 .hero__icon {
   @media screen and (min-width: 1440px) {
     width: 32px;
-    height: 32px;    
+    height: 32px;
   }
 }
