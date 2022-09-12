@@ -530,6 +530,9 @@
   margin-left: auto;
   width: 175px;
   margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+  }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-right: 174px;
   }

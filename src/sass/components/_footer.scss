@@ -30,11 +30,11 @@
 }
 .head {
   display: block;
-  margin-top: 19px;
-  margin-bottom: 24px;
+  padding-top: 19px;
+  padding-bottom: 24px;
   @media screen and (min-width: 768px) {
     text-align: left;
-    margin-right: 103px;
+    padding-right: 103px;
   }
 }
 .cont {
@@ -51,11 +51,11 @@
     text-align: left;
   }
   @media screen and (min-width: 1440px) {
-    margin-right: 161px;
+    padding-right: 161px;
   }
 }
 .soc__list {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 .soc__link:hover,
 .soc__link:focus {
