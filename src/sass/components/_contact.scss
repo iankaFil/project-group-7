@@ -146,7 +146,7 @@
 }
 
 .contacts__form-title--position {
-  @include tablet {
+  @media screen and (min-width: 767px) {
     text-align: end;
   }
 
@@ -206,6 +206,7 @@
   border: $inputBorder;
   border-radius: 50px 0px;
   padding: 22px;
+  margin-top: 4px;
   @include font(400, 16px, 1.25, $mainTextColor);
   font-family: 'Cera Pro';
 
@@ -229,7 +230,7 @@
 }
 .contacts__form-text {
   position: relative;
-  width: 280px;
+  width: 100%;
   height: 60px;
   @include font(400, 16px, 1.25, $inputTextColor);
 
@@ -244,18 +245,21 @@
     @include font(400, 16px, 1.11, $inputTextColor);
   }
 }
-.icon-input-file {
+.contacts__label-file {
+  cursor: pointer;
+}
+
+.contacts__textarea-wrap {
   position: relative;
-  bottom: 41px;
-  left: 235px;
-  @media screen and (min-width: 480px) {
-    left: 390px;
-  }
-  @include tablet {
-    left: 165px;
-  }
+}
+
+.icon-input-file {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
   @include desktop {
-    left: 475px;
+    bottom: 45px;
+    right: 70px;
   }
 }
 
@@ -389,7 +393,6 @@
 }
 .contacts__lable-textarea {
   @include font(400, 18px, 1.1, $mainTextColor);
-  margin-bottom: 4px;
   @include tablet {
     text-align: justify;
   }
