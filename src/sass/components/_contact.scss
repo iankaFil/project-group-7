@@ -281,7 +281,7 @@
   @include desktop {
     display: flex;
     flex-direction: column;
-    padding-top: 0;
+    margin-right: 100px;
     padding-top: 100px;
     gap: 68px;
   }
@@ -405,7 +405,6 @@
   @include desktop {
     margin-left: auto;
     margin-top: 24px;
-    margin-right: 120px;
   }
 }
 
