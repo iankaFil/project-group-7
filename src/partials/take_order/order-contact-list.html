@@ -68,10 +68,12 @@
               rows="5"
               placeholder="Залишіть своє повідомлення"
             ></textarea>
-            <svg class="order-form_svg" width="23" height="20">
-              <use href="./images/sprite.svg#icon-input-file"></use>
-            </svg>
-          </label>
+            <input type="file" id="file" class="contacts__input-file visually-hidden">
+            <label for="file" class="contacts__label-file">
+              <svg class="order-form_svg" width="22" height="20">
+                <use href="./images/sprite.svg#icon-input-file"></use>
+              </svg>
+            </label>
           <div class="order-form_container-messege">
             <input type="file" name="message_img" />
           </div>
