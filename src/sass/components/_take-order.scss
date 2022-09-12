@@ -148,7 +148,6 @@
   }
 }
 .take-order-contacts {
-  margin-top: 60px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -163,7 +162,7 @@
     text-align: end;
     display: flex;
     flex-direction: column;
-
+    margin-left: auto;
     gap: 30px;
     padding-bottom: 90px;
   }
@@ -312,14 +311,20 @@
   }
 }
 //*---Форма---*//
-.order-form_title {
-  font-size: 18px;
-  line-height: 1.27;
-
-  color: $accentTextColor;
-
-  margin-bottom: 8px;
+.order-container {
+  display: block;
+  @include desktop {
+    display: flex;
+  }
 }
+// .order-form_title {
+//   font-size: 18px;
+//   line-height: 1.27;
+
+//   color: $accentTextColor;
+
+//   margin-bottom: 8px;
+// }
 
 .order-form_container {
   position: relative;
@@ -483,8 +488,8 @@
 
 .order-form_svg {
   position: absolute;
-  top: 180px;
-  right: 21px;
+  top: 192px;
+  right: 27px;
   z-index: 1;
   pointer-events: none;
 }
@@ -501,15 +506,21 @@
 
 .order-form_btn {
   @include btn;
-
-  width: 100%;
-
-  padding: 16px 83.5px;
-
-  cursor: pointer;
-  border: transparent;
-
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  width: 175px;
   margin-bottom: 60px;
+  @include tablet {
+    margin-right: 174px;
+  }
+}
+
+.take-order__form {
+  @media screen and (max-width: 1439px) {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 
 //*---Форма---*//

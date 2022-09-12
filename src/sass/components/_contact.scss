@@ -168,15 +168,17 @@
 
 .contacts__form-input {
   margin-bottom: 44px;
-  border: none;
-  border-bottom: $inputBorder;
+  @include font(400, 16px, 1.25, $mainTextColor);
+
   width: 100%;
   height: 20px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25em;
 
-  color: $mainTextColor;
+  border: transparent;
+  border-bottom: $inputBorder;
+
+  &:focus {
+    outline: none;
+  }
 
   @include tablet {
     width: 400px;
@@ -184,10 +186,6 @@
 
   @include desktop {
     width: 555px;
-  }
-  &:hover,
-  &:focus {
-    outline: none;
   }
 }
 .contacts__form-input::placeholder {
