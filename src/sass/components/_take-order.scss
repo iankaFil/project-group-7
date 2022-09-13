@@ -399,8 +399,11 @@
   }
 
   &:focus + .order-form_name,
+  &:not(:placeholder-shown) + .order-form_name {
+    transform: translateY(-20px);
+  }
+  
   &:focus + .order-form_email,
-  &:not(:placeholder-shown) + .order-form_name,
   &:not(:placeholder-shown) + .order-form_email {
     transform: translateY(-20px);
   }
