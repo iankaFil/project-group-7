@@ -1,32 +1,20 @@
 // MORE PHOTOS
 
 .photos__container {
-  margin: 0 auto;
   margin-bottom: 60px;
-  padding: 0 20px;
-  width: 100%;
-  
-
-  // @media screen and (max-width: 767px) {
-  //   max-width: 280px;
-  // }
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding: 0 32px;
     margin-bottom: 80px;
   }
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    padding: 0 149px;
     margin-bottom: 100px;
   }
 }
 
 .photos__title {
-  // @include font (null, 48px, 1.25, null, $accentTextColor);
-
   font-size: 24px;
   line-height: 1.25;
   margin-bottom: 16px;
@@ -300,6 +288,7 @@
 .full-img {
   @media screen and (max-width: 767px) {
     max-width: calc(100vw - 42px * 2);
+    max-height: 100vh;
   }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     max-width: calc( 100vw - 107px * 2 );
@@ -319,6 +308,7 @@
   height: 100%;
   background: rgba(43, 43, 43, 0.8);
   backdrop-filter: blur(4px);
+  z-index: 2;
 }
 
 .overlay__img-wrap {
