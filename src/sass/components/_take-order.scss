@@ -329,14 +329,11 @@
     display: flex;
   }
 }
-// .order-form_title {
-//   font-size: 18px;
-//   line-height: 1.27;
-
-//   color: $accentTextColor;
-
-//   margin-bottom: 8px;
-// }
+.order-subtitle {
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    text-align: center;
+  }
+}
 
 .order-form {
   padding-top: 40px;

@@ -16,7 +16,7 @@
 .footer__container {
   @media screen and (min-width: 1440px) {
     display: flex;
-    padding-left: 32px;
+    margin-left: 32px;
   }
 }
 
@@ -35,11 +35,9 @@
 }
 .head {
   display: block;
-  // padding-top: 19px;
-  // padding-bottom: 24px;
   @media screen and (min-width: 768px) {
     text-align: left;
-    padding-right: 103px;
+    margin-right: 103px;
   }
 }
 .cont {
@@ -56,11 +54,11 @@
     text-align: left;
   }
   @media screen and (min-width: 1440px) {
-    padding-right: 161px;
+    margin-right: 161px;
   }
 }
 .soc__list {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .soc__link:hover,

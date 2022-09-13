@@ -326,13 +326,8 @@
 .contacts__mail,
 .contacts__work-time {
   width: 247px;
-  font-family: 'Cera Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+  @include font(400, 16px, 1.25, $mainTextColor);
   text-transform: none;
-  color: $mainTextColor;
 
   @include tablet {
     width: 184px;
