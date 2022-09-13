@@ -76,15 +76,15 @@
 }
 .hero-take-order__text-item {
   width: 280px;
-  height: 60px;
+  // height: 60px;
 
   @include tablet {
     width: 336px;
-    height: 60px;
+    // height: 60px;
   }
   @include desktop {
     width: 672px;
-    height: 46px;
+    // height: 46px;
     &:last-child {
       margin-bottom: 60px;
     }
@@ -532,7 +532,8 @@
   margin-bottom: 60px;
   border: none;
   @media screen and (max-width: 767px) {
-    margin-right: auto;
+    width: 100%;
+    justify-content: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-right: 174px;

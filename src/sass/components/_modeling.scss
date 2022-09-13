@@ -1,21 +1,21 @@
-.work-examples {
-  @media screen and (max-width: 1439px) {
-    padding-top: 40px;
-    padding-bottom: 60px;
-  }
+// .work-examples {
+//   @media screen and (max-width: 1439px) {
+//     padding-top: 40px;
+//     padding-bottom: 60px;
+//   }
 
-  @media screen and (min-width: 1440px) {
-    padding-top: 100px;
-    padding-bottom: 80px;
-  }
+//   @media screen and (min-width: 1440px) {
+//     padding-top: 100px;
+//     padding-bottom: 80px;
+//   }
 
-  .container {
-    @media screen and (min-width: 1440px) {
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-  }
-}
+//   .container {
+//     @media screen and (min-width: 1440px) {
+//       padding-left: 32px;
+//       padding-right: 32px;
+//     }
+//   }
+// }
 
 .work-examples__title {
   @extend .subtitle;
@@ -106,6 +106,10 @@
   @include btn;
   display: inline-block;
   max-width: 280px;
+  margin-bottom: 60px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 80px;
+  }
 }
 
 .modeling-hero {
@@ -116,7 +120,6 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     padding-top: 34px;
   }
-
 }
 
 .modeling-hero__title {
@@ -224,7 +227,6 @@
   left: 8px;
 }
 
-
 // .methods-box {
 //   padding-left: 20px;
 //   padding-right: 20px;
@@ -238,7 +240,6 @@
 //     padding-left: 149px;
 //   }
 // }
-
 
 .modeling-hero__list {
   @media screen and (min-width: 1440px) {
@@ -307,8 +308,8 @@
   background-size: contain;
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/bitmap/3d-modeling/mobile/3d-model@2x.png);
   }
 
@@ -321,8 +322,8 @@
     background-image: url(../images/bitmap/3d-modeling/tablet/3d-model.png);
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/bitmap/3d-modeling/tablet/3d-model@2x.png);
     }
   }
@@ -336,8 +337,8 @@
     background-image: url(../images/bitmap/3d-modeling/desktop/3d-model.png);
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       background-image: url(../images/bitmap/3d-modeling/desktop/3d-model@2x.png);
     }
   }

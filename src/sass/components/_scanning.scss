@@ -290,13 +290,12 @@
   text-align: center;
 }
 
-.button {
-  @include btn;
-}
-
 .scann__btn {
+  @include btn;
   display: block;
-
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   width: 280px;
   margin-left: auto;
   margin-right: auto;
@@ -317,6 +316,7 @@
 
   .scann__list {
     gap: 32px;
+    margin-bottom: 60px;
   }
 
   .scann__item-1::before,
