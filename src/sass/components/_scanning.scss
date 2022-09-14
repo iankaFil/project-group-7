@@ -72,30 +72,70 @@
   }
 }
 .scanhero_photo {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
 
-  @media screen and (max-width: 767px) {
-    max-width: 280px;
-    margin: auto;
+  // @media screen and (max-width: 767px) {
+  //   max-width: 280px;
+  //   margin: auto;
+  // }
+  // @media screen and (min-width: 768px) and (max-width: 1439px) {
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 40;
+  //   width: 241px;
+  //   height: 172px;
+  // }
+  // @media screen and (min-width: 1440px) {
+  //   width: 435px;
+  //   height: 286px;
+
+  width: 100%;
+  height: 199px;
+  background-image: url(../images/bitmap/3d-scanning/mobile/scanning.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/mobile/scanning@2x.jpg);
   }
+
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
-    right: 0;
-    bottom: 40;
+    top: -273%;
+    right: -28px;
     width: 241px;
     height: 172px;
+    background-image: url(../images/bitmap/3d-scanning/tablet/scanning.jpg);
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/tablet/scanning@2x.jpg);
+  }
+
   @media screen and (min-width: 1440px) {
+    position: absolute;
+
     width: 435px;
     height: 286px;
+    background-image: url(../images/bitmap/3d-scanning/desktop/scanning.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/bitmap/3d-scanning/desktop/scanning@2x.jpg);
   }
 }
 
-.scann {
-  padding-top: 40px;
-  padding-bottom: 60px;
-}
+// .scann {
+//   padding-top: 40px;
+//   padding-bottom: 60px;
+// }
 
 .scann__title {
   @include font(700, 18px, 1.28, $accentTextColor);
@@ -304,9 +344,9 @@
 // -----------------адаптив таблетки-------
 
 @media screen and (min-width: 768px) {
-  .scann {
-    padding-bottom: 60px;
-  }
+  // .scann {
+  //   padding-bottom: 60px;
+  // }
 
   .scann__title {
     @include font(700, 24px, 1.25, $accentTextColor);
@@ -337,10 +377,10 @@
 // -----------------адаптив desktop-------
 
 @media screen and (min-width: 1440px) {
-  .scann {
-    padding-top: 22px;
-    padding-bottom: 80px;
-  }
+  // .scann {
+  //   padding-top: 22px;
+  //   padding-bottom: 80px;
+  // }
 
   .scann__box {
     padding: 0 32px;

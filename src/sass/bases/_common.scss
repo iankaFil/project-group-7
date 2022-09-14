@@ -45,6 +45,12 @@ section {
     width: 1440px;
   }
 }
+
+.photo-container {
+  @media screen and (min-width: 1440px) {
+    padding: 0 32px;
+  }
+}
 .title {
   @include font($fw, 24px, $lh, $accentTextColor);
 

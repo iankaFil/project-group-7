@@ -154,6 +154,7 @@
   }
 }
 .dropbtn {
+  cursor: pointer;
   @media screen and (max-width: 1439px) {
     margin-bottom: 24px;
   }
@@ -211,10 +212,6 @@
   position: absolute;
   z-index: 2;
   text-align: center;
-  transition-property: translate;
-  transition-duration: 150ms;
-  transition-timing-function: linear;
-  transition-delay: 0;
 
   @media screen and (max-width: 767px) {
     font-size: 18px;
@@ -225,9 +222,9 @@
     top: auto;
     transform: translateX(-240px);
   }
-  @media screen and (min-width: 1440px) {
-    transform: translateX(456%);
-  }
+  // @media screen and (min-width: 1440px) {
+  //   transform: translateX(456%);
+  // }
 }
 
 .dropmenu-lang__content .dropmenu-lang__link {
