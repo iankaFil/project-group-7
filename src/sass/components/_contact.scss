@@ -250,9 +250,13 @@
   position: absolute;
   bottom: 80px;
   right: 20px;
+  @include tablet {
+      bottom: 120px;
+      right: 20px;
+    }
   @include desktop {
-    bottom: 45px;
-    right: 70px;
+    bottom: 65px;
+    right: 75px;
   }
 }
 

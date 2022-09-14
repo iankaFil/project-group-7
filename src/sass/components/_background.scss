@@ -27,8 +27,9 @@
 
 .modeling-background {
   background-image: url(../images/bckg/mobile/decor-modeling-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
 
   @include retina {
     background-image: url(../images/bckg/mobile/decor-modeling-mob@2x.png);
@@ -53,8 +54,9 @@
 
 .scanning-background {
   background-image: url(../images/bckg/mobile/decor-scanning-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
 
   @include retina {
     background-image: url(../images/bckg/mobile/decor-scanning-mob@2x.png);
@@ -79,8 +81,9 @@
 
 .printing-background {
   background-image: url(../images/bckg/mobile/decor-printing-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
 
   @include retina {
     background-image: url(../images/bckg/mobile/decor-printing-mob@2x.png);
@@ -105,9 +108,9 @@
 
 .take-order-background {
   background-image: url(../images/bckg/mobile/decor-order-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-
+background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
   @include retina {
     background-image: url(../images/bckg/mobile/decor-order-mob@2x.png);
   }
@@ -131,8 +134,9 @@
 
 .contacts-background {
   background-image: url(../images/bckg/mobile/decor-contact-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
 
   @include retina {
     background-image: url(../images/bckg/mobile/decor-contact-mob@2x.png);
