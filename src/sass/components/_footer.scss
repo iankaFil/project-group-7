@@ -41,6 +41,9 @@
 }
 .head {
   display: block;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
+  }
   @media screen and (min-width: 768px) {
       text-align: left;
       margin-right: 52px;
